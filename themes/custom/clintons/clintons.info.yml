@@ -1,0 +1,15 @@
+name: Clintons
+type: theme
+description: 'Clintons theme'
+core: 8.x
+#screenshot: 'images/screenshot.png'
+
+libraries:
+  - clintons/bootstrap
+  - clintons/custom
+
+regions:
+  main_navigation: 'Main navigation'
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
