@@ -1078,11 +1078,11 @@ footer .navbar-expand-lg {
 
 }
 
-@media (min-width: 1220px) {
-    nav .navbar {
-        max-width: 1440px;
-    }
-}
+/*@media (min-width: 1220px) {*/
+    /*nav .navbar {*/
+        /*max-width: 1440px;*/
+    /*}*/
+/*}*/
 
 @media (max-width: 1160px) and (min-width: 769px) {
     .bottom-contacts {
