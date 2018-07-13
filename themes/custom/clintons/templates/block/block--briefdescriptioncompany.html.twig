@@ -26,18 +26,18 @@
  */
 #}
 <div{{ attributes }}>
-    {{ title_prefix }}
-    {% if label %}
-        <h2{{ title_attributes }}>{{ label }}</h2>
-    {% endif %}
-    {{ title_suffix }}
-    {% block content %}
-        <section>
-            <div class="border-left"></div>
-            <div class="width-container">
-                 {{ content }}
-            </div>
-            <div class="border-right"></div>
-        </section>
-    {% endblock %}
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <section>
+      <div class="border-left"></div>
+      <div class="width-container">
+        {{ content }}
+      </div>
+      <div class="border-right"></div>
+    </section>
+  {% endblock %}
 </div>
