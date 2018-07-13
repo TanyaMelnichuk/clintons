@@ -39,23 +39,22 @@
  */
 #}
 {%
-set classes = [
-'paragraph',
-'carousel-item',
-'col-md-3 ',
-'paragraph--type--' ~ paragraph.bundle|clean_class,
-view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-]
+  set classes = [
+    'paragraph',
+    'carousel-item',
+    'col-md-3 ',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
 %}
 {% block paragraph %}
-    <div{{ attributes.addClass(classes) }}>
-        {% block content %}
-            <div class="panel panel-default">
-                <div class="panel-thumbnail">
-                    {{ content }}
-                </div>
-            </div>
-
-        {% endblock %}
-    </div>
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="panel panel-default">
+        <div class="panel-thumbnail">
+          {{ content }}
+        </div>
+      </div>
+    {% endblock %}
+  </div>
 {% endblock paragraph %}

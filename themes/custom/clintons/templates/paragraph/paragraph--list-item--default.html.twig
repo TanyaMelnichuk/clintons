@@ -39,17 +39,26 @@
  */
 #}
 {%
-set classes = [
-'paragraph',
-'list-block',
-'paragraph--type--' ~ paragraph.bundle|clean_class,
-view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-]
+  set classes = [
+    'paragraph',
+    'list-block',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
 %}
 {% block paragraph %}
-    <div{{ attributes.addClass(classes) }}>
-        {% block content %}
-            {{ content }}
-        {% endblock %}
-    </div>
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      <div class="list-item" data-toggle="collapse" data-target="#{{ id_title }}" aria-expanded="false">
+        <h5>{{ content.field_name }}</h5>
+        <span class="icon-plus">+</span>
+        <span class="icon-minus">-</span>
+      </div>
+      <div class="collapse" id="{{ id_title }}">
+        <div class="item-description">
+          {{ content.field_collapse_description_tab }}
+        </div>
+      </div>
+    {% endblock %}
+  </div>
 {% endblock paragraph %}

@@ -27,23 +27,21 @@
 #}
 
 <div{{ attributes }}>
-    {{ title_prefix }}
-    <section id="contact">
-        <div class="width-container">
-            {% if label %}
-                <div class="title">
-                    <h2{{ title_attributes }}>{{ label }}</h2>
-                </div>
-            {% endif %}
-            {{ title_suffix }}
-            {{ title_suffix }}
-            {% block content %}
-
-                <div class="list">
-                    {{ content }}
-                </div>
-
-            {% endblock %}
+  {{ title_prefix }}
+  <section id="contact">
+    <div class="width-container">
+      {% if label %}
+        <div class="title">
+          <h2{{ title_attributes }}>{{ label }}</h2>
         </div>
-    </section>
+      {% endif %}
+      {{ title_suffix }}
+      {{ title_suffix }}
+      {% block content %}
+        <div class="list">
+          {{ content }}
+        </div>
+      {% endblock %}
+    </div>
+  </section>
 </div>
