@@ -1191,6 +1191,7 @@ footer .navbar-expand-lg {
 .popup.popup-modal{
     display: block;
     position: relative;
+    min-height: 580px;
 }
 .popup .left{
     width: 300px;
@@ -1384,6 +1385,9 @@ footer .navbar-expand-lg {
     }
     .popup.popup-modal .right{
         margin-top: 40px;
+    }
+    .popup.popup-modal{
+        height: auto;
     }
 
 

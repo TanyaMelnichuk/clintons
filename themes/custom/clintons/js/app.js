@@ -93,6 +93,9 @@ $(document).ready(function () {
         element.after('<div class="popup popup-modal"></div>');
         var popupModal = $(".popup.popup-modal");
         popupModal.html(popupContent);
+        $(".popup-modal .icon-close").click(function(){
+            $(".popup-modal").css('display', 'none');
+        });
 
     });
 
@@ -102,7 +105,11 @@ $(document).ready(function () {
             container.hide();
         }
     });
-    $('.icon-close').click(function (){
-        alert("kdfm");
-    })
+
+    $(".people-photo.hover a").click(function(){
+        return false;
+    });
+    $('.email-contacts a').click(function(){
+        return false;
+    });
 })(jQuery);
