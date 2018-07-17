@@ -1,0 +1,109 @@
+uuid: 27408214-a6df-44cd-8069-1121e7457fc3
+langcode: en
+status: true
+dependencies: {  }
+id: meet_the_team
+label: 'Meet the team'
+renderer: ui_tabs
+options:
+  accordion_tabs:
+    jquery_ui:
+      collapsible: 0
+      heightStyle: auto
+  quick_tabs:
+    ajax: '0'
+hide_empty_tabs: 0
+default_tab: '0'
+configuration_data:
+  -
+    title: Partners
+    weight: '0'
+    type: block_content
+    content:
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: '1'
+      block_content:
+        options:
+          bid: 'views_block:team-partners'
+          block_title: ''
+          display_title: 0
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: Associates
+    weight: '0'
+    type: block_content
+    content:
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: '1'
+      block_content:
+        options:
+          bid: 'views_block:team-associates'
+          block_title: ''
+          display_title: 0
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: Consultants
+    weight: '0'
+    type: block_content
+    content:
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: '1'
+      block_content:
+        options:
+          bid: 'views_block:team-consultants'
+          block_title: ''
+          display_title: 0
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: Trainees
+    weight: '0'
+    type: block_content
+    content:
+      view_content:
+        options:
+          vid: block_content
+          display: default
+          args: ''
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: '1'
+      block_content:
+        options:
+          bid: 'views_block:team-trainees'
+          block_title: ''
+          display_title: 0
+      qtabs_content:
+        options:
+          machine_name: ''

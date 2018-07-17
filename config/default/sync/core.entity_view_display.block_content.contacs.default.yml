@@ -1,0 +1,33 @@
+uuid: 08fb57d4-c5a0-45cb-893a-af3a712864bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacs
+    - field.field.block_content.contacs.field_address
+    - field.field.block_content.contacs.field_map
+  module:
+    - image
+    - text
+id: block_content.contacs.default
+targetEntityType: block_content
+bundle: contacs
+mode: default
+content:
+  field_address:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_map:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

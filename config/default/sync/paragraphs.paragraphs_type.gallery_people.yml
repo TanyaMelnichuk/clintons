@@ -1,0 +1,7 @@
+uuid: a8d215c2-a6c0-4113-9541-38c9f6d2072e
+langcode: en
+status: true
+dependencies: {  }
+id: gallery_people
+label: 'Gallery people'
+behavior_plugins: {  }

@@ -1,0 +1,39 @@
+uuid: 5c97ecb8-3348-4ccf-8eef-57658abc766f
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.people
+    - field.storage.block_content.field_people_list
+    - paragraphs.paragraphs_type.gallery_people
+  module:
+    - entity_reference_revisions
+id: block_content.people.field_people_list
+field_name: field_people_list
+entity_type: block_content
+bundle: people
+label: 'People list'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      gallery_people: gallery_people
+    target_bundles_drag_drop:
+      contacs_list_in_tab:
+        weight: 5
+        enabled: false
+      gallery_people:
+        enabled: true
+        weight: 6
+      list_item:
+        weight: 7
+        enabled: false
+      tab_item:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

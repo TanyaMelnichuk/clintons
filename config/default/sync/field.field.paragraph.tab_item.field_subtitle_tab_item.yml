@@ -1,0 +1,21 @@
+uuid: 54c3b4b3-7c5d-4c49-9bb2-d2f800c40d2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitle_tab_item
+    - paragraphs.paragraphs_type.tab_item
+  module:
+    - text
+id: paragraph.tab_item.field_subtitle_tab_item
+field_name: field_subtitle_tab_item
+entity_type: paragraph
+bundle: tab_item
+label: 'Subtitle tab item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

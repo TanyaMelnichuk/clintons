@@ -1,0 +1,25 @@
+uuid: 83c3468a-2904-43fd-a955-5aa21bf317a3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:people:75fb9b8f-05d7-4bc9-8e70-4e6003872b6e'
+  module:
+    - block_content
+  theme:
+    - clintons
+id: blockpeople
+theme: clintons
+region: content
+weight: -9
+provider: null
+plugin: 'block_content:75fb9b8f-05d7-4bc9-8e70-4e6003872b6e'
+settings:
+  id: 'block_content:75fb9b8f-05d7-4bc9-8e70-4e6003872b6e'
+  label: 'Block people'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

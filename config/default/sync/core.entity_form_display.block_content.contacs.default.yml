@@ -1,0 +1,42 @@
+uuid: d78dd429-7637-401b-b162-ed95d3e8febd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacs
+    - field.field.block_content.contacs.field_address
+    - field.field.block_content.contacs.field_map
+    - image.style.thumbnail
+  module:
+    - image
+    - text
+id: block_content.contacs.default
+targetEntityType: block_content
+bundle: contacs
+mode: default
+content:
+  field_address:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_map:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

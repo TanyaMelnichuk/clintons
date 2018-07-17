@@ -1,0 +1,21 @@
+uuid: d59b862e-b404-4c3e-8313-fd38f493f638
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_people_detail_position
+    - paragraphs.paragraphs_type.people
+  module:
+    - text
+id: paragraph.people.field_people_detail_position
+field_name: field_people_detail_position
+entity_type: paragraph
+bundle: people
+label: 'Detail position'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,24 @@
+uuid: e0b46879-70fa-4602-8da8-9c79bf6b0a82
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brief_description_text
+    - field.storage.block_content.field_title_section
+  module:
+    - text
+id: block_content.brief_description_text.field_title_section
+field_name: field_title_section
+entity_type: block_content
+bundle: brief_description_text
+label: 'Title section'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<h2>We are Clintons</h2>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

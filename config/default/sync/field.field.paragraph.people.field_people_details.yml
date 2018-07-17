@@ -1,0 +1,21 @@
+uuid: 2f23cac0-da0f-4c12-a2ff-d415f72ae853
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_people_details
+    - paragraphs.paragraphs_type.people
+  module:
+    - text
+id: paragraph.people.field_people_details
+field_name: field_people_details
+entity_type: paragraph
+bundle: people
+label: Details
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

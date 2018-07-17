@@ -1,0 +1,23 @@
+uuid: b171edb6-3831-4d39-9ea6-86b2e6c9cb8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery_select_team
+    - node.type.gallery
+  module:
+    - options
+id: node.gallery.field_gallery_select_team
+field_name: field_gallery_select_team
+entity_type: node
+bundle: gallery
+label: 'Select team'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: Partners
+default_value_callback: ''
+settings: {  }
+field_type: list_string

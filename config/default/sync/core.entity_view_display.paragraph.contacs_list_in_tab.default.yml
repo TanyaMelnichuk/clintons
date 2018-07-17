@@ -1,0 +1,33 @@
+uuid: deaf9392-6495-40a3-b3e0-4e830e8418e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contacs_list_in_tab.field_person_name
+    - field.field.paragraph.contacs_list_in_tab.field_photo_person
+    - paragraphs.paragraphs_type.contacs_list_in_tab
+  module:
+    - image
+    - text
+id: paragraph.contacs_list_in_tab.default
+targetEntityType: paragraph
+bundle: contacs_list_in_tab
+mode: default
+content:
+  field_person_name:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_photo_person:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

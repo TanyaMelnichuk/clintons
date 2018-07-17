@@ -1,0 +1,20 @@
+uuid: 40e59cbb-7ead-4ffe-a104-a487846255aa
+langcode: en
+status: false
+dependencies:
+  theme:
+    - clintons
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: clintons_local_actions
+theme: clintons
+region: content
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

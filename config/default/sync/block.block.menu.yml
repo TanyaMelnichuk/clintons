@@ -1,0 +1,24 @@
+uuid: 151d5a32-8230-4cbb-91c8-d38908822923
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu
+  module:
+    - system
+  theme:
+    - clintons
+id: menu
+theme: clintons
+region: main_navigation
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu'
+settings:
+  id: 'system_menu_block:menu'
+  label: Menu
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

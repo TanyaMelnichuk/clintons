@@ -1,0 +1,20 @@
+uuid: 87411c86-08d9-4359-b872-2a313fa11aca
+langcode: en
+status: true
+dependencies:
+  module:
+    - quicktabs
+  theme:
+    - clintons
+id: quicktabsmeettheteam
+theme: clintons
+region: content
+weight: -8
+provider: null
+plugin: 'quicktabs_block:meet_the_team'
+settings:
+  id: 'quicktabs_block:meet_the_team'
+  label: 'Meet the team'
+  provider: quicktabs
+  label_display: visible
+visibility: {  }

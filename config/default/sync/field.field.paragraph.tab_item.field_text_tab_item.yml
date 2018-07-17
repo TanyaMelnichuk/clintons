@@ -1,0 +1,21 @@
+uuid: 2330d211-ec40-45e3-92d5-5e61b7eeeb06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_tab_item
+    - paragraphs.paragraphs_type.tab_item
+  module:
+    - text
+id: paragraph.tab_item.field_text_tab_item
+field_name: field_text_tab_item
+entity_type: paragraph
+bundle: tab_item
+label: 'Text tab item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

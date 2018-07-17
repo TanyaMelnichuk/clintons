@@ -1,0 +1,33 @@
+uuid: 9988493c-3df2-4202-9c56-69dbd6596844
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_gallery_select_team
+field_name: field_gallery_select_team
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Partners
+      label: Partner
+    -
+      value: Associates
+      label: Associate
+    -
+      value: Consultants
+      label: Consultant
+    -
+      value: Trainees
+      label: Trainee
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

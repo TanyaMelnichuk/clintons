@@ -1,0 +1,21 @@
+uuid: 09ac5b75-c2bc-4209-80a1-428cd3a28b97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carouselpeople_content
+    - paragraphs.paragraphs_type.gallery_people
+  module:
+    - text
+id: paragraph.gallery_people.field_carouselpeople_content
+field_name: field_carouselpeople_content
+entity_type: paragraph
+bundle: gallery_people
+label: 'CarouselPeople content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

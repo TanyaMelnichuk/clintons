@@ -1,0 +1,21 @@
+uuid: cbd90cb3-ec2b-4c70-a7e9-7bc83e7216c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacs
+    - field.storage.block_content.field_address
+  module:
+    - text
+id: block_content.contacs.field_address
+field_name: field_address
+entity_type: block_content
+bundle: contacs
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
