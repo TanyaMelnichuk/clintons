@@ -67,3 +67,42 @@ $(document).ready(function () {
     });
 
 })(jQuery);
+
+(function ($) {
+
+    $(".people-photo.default").mouseover(function(){
+        var photo = $(this);
+        var parent = photo.parent(".panel-thumbnail");
+        var check = parent.find(".people-photo.hover");
+        photo.css('display', 'none');
+        check.css('display', 'block');
+    });
+    $(".people-photo.hover").mouseout(function(){
+        var photo = $(this);
+        var parent = photo.parent(".panel-thumbnail");
+        var check = parent.find(".people-photo.default");
+        photo.css('display', 'none');
+        check.css('display', 'block');
+    });
+
+    $(".people-photo.hover span").click(function() {
+        var popup = $(this).closest('.panel.panel-default').find('.popup');
+        popup.css('display', 'none');
+        var popupContent = popup.html();
+        var element = $('#quicktabs-meet_the_team .ui-tabs-nav');
+        element.after('<div class="popup popup-modal"></div>');
+        var popupModal = $(".popup.popup-modal");
+        popupModal.html(popupContent);
+
+    });
+
+    $(document).mouseup(function (e) {
+        var container = $(".popup.popup-modal");
+        if (container.has(e.target).length === 0){
+            container.hide();
+        }
+    });
+    $('.icon-close').click(function (){
+        alert("kdfm");
+    })
+})(jQuery);

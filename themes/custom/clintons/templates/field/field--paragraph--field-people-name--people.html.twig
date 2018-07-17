@@ -36,16 +36,9 @@
  * @see template_preprocess_field()
  */
 #}
-
-<div class="list" {{ attributes }}>
-  <div class="column">
+<span class="icon-close fa fa-times"></span>
+<div{{ attributes }} class="name">
     {% for item in items %}
         {{ item.content }}
     {% endfor %}
-  </div>
-  <div class="column">
-    {% for item in items %}
-      {{ item.content }}
-    {% endfor %}
-  </div>
 </div>

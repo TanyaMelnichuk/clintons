@@ -37,15 +37,8 @@
  */
 #}
 
-<div class="list" {{ attributes }}>
-  <div class="column">
+<div{{ attributes }} class="list-item-name">
     {% for item in items %}
         {{ item.content }}
     {% endfor %}
-  </div>
-  <div class="column">
-    {% for item in items %}
-      {{ item.content }}
-    {% endfor %}
-  </div>
 </div>

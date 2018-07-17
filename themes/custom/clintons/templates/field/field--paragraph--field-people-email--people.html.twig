@@ -37,15 +37,8 @@
  */
 #}
 
-<div class="list" {{ attributes }}>
-  <div class="column">
+<div{{ attributes }} class="block-bottom-contacts email-contacts">
     {% for item in items %}
-        {{ item.content }}
+        <a href="#"><i class="fa fa-at"></i>{{ item.content }}</a>
     {% endfor %}
-  </div>
-  <div class="column">
-    {% for item in items %}
-      {{ item.content }}
-    {% endfor %}
-  </div>
 </div>

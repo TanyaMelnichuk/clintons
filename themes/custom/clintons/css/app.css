@@ -335,7 +335,10 @@ section {
     font-weight: 300;
     position: relative;
 }
-.list-item p{
+.list-item h5{
+    margin-bottom: 0;
+}
+.list-item-name{
     padding-left: 30px;
     color: #fff;
     font-size: 20px;
@@ -752,6 +755,7 @@ section {
     font-size: 20px;
     font-weight: 300;
     margin-top: 20px;
+    text-align: center;
 }
 .panel-thumbnail .position p {
     margin-bottom: 0;
@@ -966,12 +970,13 @@ section {
     align-items: center;
     color: #1d1d1b;
     font-weight: 600;
-    font-size: 16px
-
+    font-size: 16px;
+    position: relative;
 }
-.block-bottom-contacts a:last-child{
+.email-contacts a{
     border-top: 1px solid #ef93b5;;
 }
+
 .block-bottom-contacts i{
     border-right: 1px solid #c9517e;
     height: 100%;
@@ -1023,12 +1028,6 @@ section {
 .hover-description{
     display: none;
 }
-.icon-close{
-    position: absolute;
-    top: 60px;
-    right: 50px;
-    cursor: pointer;
-}
 /*----------------------------------------*/
 
 /*footer CSS
@@ -1063,7 +1062,249 @@ footer .navbar-expand-lg {
     margin-bottom: 0;
     font-size: 10px;
 }
+.paragraph--type--people .name p{
+    color: #d85a89;
+    font-weight: 500;
+}
+.paragraph--type--people .position p{
+    text-align: center;
+}
+.paragraph--type--people .detail-position p{
+    text-align: center;
+}
+.people-photo.hover img{
+    height: 211px;
+}
+/*----------------------------------------*/
 
+/*add new CSS
+/*----------------------------------------*/
+.quicktabs-ui-wrapper{
+    border: 0 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+#quicktabs-meet_the_team ul{
+    /*max-width: 1280px;*/
+    /*margin-left: auto !important;*/
+    /*margin-right: auto !important;*/
+    /*padding: 0 15px !important;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border: 0 !important;
+    background-color: #c9517e;
+}
+#quicktabs-meet_the_team ul li{
+    background: transparent;
+    border: 0;
+}
+#quicktabs-meet_the_team ul li a{
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    position: relative;
+}
+#quicktabs-meet_the_team ul li a:after{
+    content: '+';
+    position: absolute;
+    color: #f7c457;
+    font-weight: 300;
+    margin-left: 10px;
+    font-size: 19px;
+    position: absolute;
+    top: -5px;
+    right: 0;
+    cursor: pointer;
+}
+#quicktabs-meet_the_team ul li[aria-expanded="true"] a:after{
+    content: '-';
+}
+#quicktabs-meet_the_team .ui-tabs-panel{
+    max-width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 0;
+    padding-top: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#quicktabs-meet_the_team .ui-tabs-nav{
+    margin-bottom: 80px;
+}
+.views-row{
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 60px;
+    cursor: pointer;
+    position: relative;
+}
+#quicktabs-meet_the_team .ui-tabs-panel .contextual-region{
+    display: flex;
+    flex-wrap: wrap;
+}
+.people-photo.hover{
+    display: none;
+    position: relative;
+}
+.people-photo img{
+    height: 260px;
+    object-fit: cover;
+    width: 100%;
+}
+.people-photo.hover a{
+    background-color: #1d1d1b;
+    color: #fff;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    float: left;
+    width: calc(100% - 49px);
+}
+.people-photo.hover .icon-plus{
+    width: 49px;
+    height: 49px;
+    position: relative;
+}
+.popup{
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    z-index: 100000;
+    background-color: #d85a89;
+    padding: 60px 50px;
+    min-height: 580px;
+}
+.popup.popup-modal{
+    display: block;
+    position: relative;
+}
+.popup .left{
+    width: 300px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.popup .left img{
+    height: 360px;
+    width: 300px;
+    object-fit: cover;
+}
+.popup .right{
+    color: #fff;
+}
+.icon-close{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    cursor: pointer;
+}
+.phone-contacts{
+    display: flex;
+    flex-direction: row;
+}
+.phone-contacts i{
+    height: 50px;
+    float: right;
+}
+.block-bottom-contacts.email-contacts i{
+    margin-right: 20px;
+}
+.block-bottom-contacts.phone-contacts a{
+    width:calc(100% - 50px);
+    padding-left: 20px;
+}
+.paragraph--type--people .right .name p{
+    font-size: 30px;
+    margin-bottom: 0;
+    color: #fff;
+}
+.paragraph--type--people .right .position,
+.paragraph--type--people .right .detail-position{
+    display: inline-block;
+}
+.paragraph--type--people .right .position p{
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: left;
+}
+.paragraph--type--people .right .detail-position p{
+    font-weight: 100;
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.8;
+}
+.right span{
+    margin: 0 20px;
+}
+.text-about-person{
+    position: relative;
+}
+.text-about-person:before{
+    position:absolute;
+    height: 6px;
+    width: 30px;
+    background-color: #fff;
+    content: '';
+}
+.text-about-person p{
+    font-size: 16px;
+    font-weight: 100;
+    opacity: 1;
+    line-height: 30px;
+    padding-top: 20px;
+}
+.right .icon-close{
+    font-size: 20px;
+    right: 30px;
+    top: 30px;
+    z-index: 1000;
+}
+.panel-thumbnail .icon-close{
+    display: none;
+}
+.popup .right .position, .popup .right .detail-position{
+    display: inline-block;
+}
+.views-row .popup{
+    display: none;
+}
+.popup .name p{
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight:500;
+}
+.popup .right .position p{
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 16px;
+}
+.popup .right .detail-position p {
+    font-weight: 100;
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+.popup.text-about-person{
+    margin-top: 20px;
+}
 /*----------------------------------------*/
 
 /*media CSS
@@ -1078,11 +1319,6 @@ footer .navbar-expand-lg {
 
 }
 
-/*@media (min-width: 1220px) {*/
-    /*nav .navbar {*/
-        /*max-width: 1440px;*/
-    /*}*/
-/*}*/
 
 @media (max-width: 1160px) and (min-width: 769px) {
     .bottom-contacts {
@@ -1100,6 +1336,10 @@ footer .navbar-expand-lg {
     .row-item{
         margin-left: -15px;
         margin-right: -15px;
+    }
+    .views-row {
+        flex: 0 0 33%;
+        max-width: 33%;
     }
 }
 
@@ -1137,6 +1377,13 @@ footer .navbar-expand-lg {
     }
     footer .navbar-nav {
         flex-direction: row;
+    }
+    .popup .left{
+        float: none;
+        margin: 0 auto;
+    }
+    .popup.popup-modal .right{
+        margin-top: 40px;
     }
 
 
@@ -1205,6 +1452,23 @@ footer .navbar-expand-lg {
         margin: 10px;
         width: 90%;
     }
+    #quicktabs-meet_the_team ul{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+    }
+    #quicktabs-meet_the_team ul li{
+        margin: 10px;
+        width: 100%;
+    }
+    #quicktabs-meet_the_team ul li a{
+        width: 90%;
+    }
+    .views-row {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 
 }
 
@@ -1215,10 +1479,10 @@ footer .navbar-expand-lg {
     .contact-list {
         width: auto;
     }
-    .list-item p{
+    .list-item-name{
         font-size: 15px;
     }
-    .list-item p{
+    .list-item-name{
         padding-left: 15px;
     }
     .contacts-link {
@@ -1235,6 +1499,26 @@ footer .navbar-expand-lg {
     .bottom-contacts{
         flex-direction: column;
         align-items: flex-start;;
+    }
+    .views-row {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .popup{
+        padding: 40px;
+    }
+    .popup .left img{
+        width: 100%;
+    }
+    .block-bottom-contacts a{
+        font-size: 14px;
+    }
+    .popup .left{
+        width: auto;
+    }
+    .right .icon-close{
+        right: 10px;
+        top: 0px;
     }
 
 }
