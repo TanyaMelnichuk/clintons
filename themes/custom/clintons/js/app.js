@@ -112,4 +112,6 @@ $(document).ready(function () {
     $('.email-contacts a').click(function(){
         return false;
     });
+    $(".column-one .list-block:odd").css('display', 'none');
+    $(".column-two .list-block:even").css('display', 'none');
 })(jQuery);
