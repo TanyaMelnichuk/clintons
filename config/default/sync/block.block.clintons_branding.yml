@@ -1,0 +1,25 @@
+uuid: 8944640b-ae9a-4b0a-8a5d-8d7fbcb0607e
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - clintons
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: clintons_branding
+theme: clintons
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

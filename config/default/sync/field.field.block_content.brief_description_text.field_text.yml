@@ -1,0 +1,24 @@
+uuid: 33bfe39b-d236-4b75-b4ea-43a385389c12
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brief_description_text
+    - field.storage.block_content.field_text
+  module:
+    - text
+id: block_content.brief_description_text.field_text
+field_name: field_text
+entity_type: block_content
+bundle: brief_description_text
+label: Text
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>Clintons is an award winning boutique law firm, based in Covent Garden in Central London. It is a market leader in the entertainment, digital media and creative industries and is highle regarder for its family, litigation, property and corporate work.</p>\r\n"
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

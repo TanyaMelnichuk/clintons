@@ -1,0 +1,8 @@
+uuid: 1b54b553-d70c-41c4-b8bb-0174039d3607
+langcode: en
+status: true
+dependencies: {  }
+id: brief_description_text
+label: 'Brief description text'
+revision: 0
+description: 'Block for text'

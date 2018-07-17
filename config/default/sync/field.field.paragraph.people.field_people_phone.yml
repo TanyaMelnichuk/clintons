@@ -1,0 +1,21 @@
+uuid: 7215cd4b-e267-4a59-8a47-188da6e3267b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_people_phone
+    - paragraphs.paragraphs_type.people
+  module:
+    - telephone
+id: paragraph.people.field_people_phone
+field_name: field_people_phone
+entity_type: paragraph
+bundle: people
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

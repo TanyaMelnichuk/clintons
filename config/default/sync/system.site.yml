@@ -1,0 +1,14 @@
+uuid: 3b6a771c-ced6-4832-94c1-c75d502dda36
+name: Clintons.
+mail: info@clintons.co.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

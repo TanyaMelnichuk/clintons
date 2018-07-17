@@ -1,0 +1,19 @@
+uuid: 321d6d61-85b0-422d-8952-3c450194abeb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_people_details
+field_name: field_people_details
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

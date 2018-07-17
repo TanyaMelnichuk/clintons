@@ -1,0 +1,45 @@
+uuid: 814dde08-9c5b-4ea5-a9a9-7954f8a217e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tabs_list
+    - field.field.block_content.tabs_list.field_list_paragraph_tabs
+    - field.field.block_content.tabs_list.field_title_paragraph_tabs
+  module:
+    - paragraphs
+    - text
+id: block_content.tabs_list.default
+targetEntityType: block_content
+bundle: tabs_list
+mode: default
+content:
+  field_list_paragraph_tabs:
+    type: entity_reference_paragraphs
+    weight: 28
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_title_paragraph_tabs:
+    weight: 27
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

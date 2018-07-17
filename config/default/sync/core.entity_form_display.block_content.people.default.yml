@@ -1,0 +1,45 @@
+uuid: 8e5a8c24-f031-4e5d-bfa4-30d36a1aeaab
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.people
+    - field.field.block_content.people.field_people_list
+    - field.field.block_content.people.field_people_title
+  module:
+    - paragraphs
+    - text
+id: block_content.people.default
+targetEntityType: block_content
+bundle: people
+mode: default
+content:
+  field_people_list:
+    type: entity_reference_paragraphs
+    weight: 27
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  field_people_title:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,91 @@
+uuid: 82122e0d-7bda-4b68-8053-a3e28828177b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.people.field_people_detail_position
+    - field.field.paragraph.people.field_people_details
+    - field.field.paragraph.people.field_people_email
+    - field.field.paragraph.people.field_people_name
+    - field.field.paragraph.people.field_people_phone
+    - field.field.paragraph.people.field_people_photo
+    - field.field.paragraph.people.field_people_photo_hover
+    - field.field.paragraph.people.field_people_position
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.people
+  module:
+    - image
+    - telephone
+    - text
+id: paragraph.people.default
+targetEntityType: paragraph
+bundle: people
+mode: default
+content:
+  field_people_detail_position:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_people_details:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_people_email:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_people_name:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_people_phone:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_people_photo:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_people_photo_hover:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_people_position:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

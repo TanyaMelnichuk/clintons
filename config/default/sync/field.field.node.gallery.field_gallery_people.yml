@@ -1,0 +1,42 @@
+uuid: c4ada270-2a8e-4473-a0f1-f78ddd431a92
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_gallery_people
+    - node.type.gallery
+    - paragraphs.paragraphs_type.people
+  module:
+    - entity_reference_revisions
+id: node.gallery.field_gallery_people
+field_name: field_gallery_people
+entity_type: node
+bundle: gallery
+label: People
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      people: people
+    target_bundles_drag_drop:
+      contacs_list_in_tab:
+        weight: 5
+        enabled: false
+      gallery_people:
+        weight: 6
+        enabled: false
+      list_item:
+        weight: 7
+        enabled: false
+      tab_item:
+        weight: 8
+        enabled: false
+      people:
+        enabled: true
+        weight: 9
+field_type: entity_reference_revisions

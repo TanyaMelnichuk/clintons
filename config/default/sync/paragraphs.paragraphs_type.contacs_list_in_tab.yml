@@ -1,0 +1,7 @@
+uuid: 75b6297b-9bee-4d02-abab-920fdab094ce
+langcode: en
+status: true
+dependencies: {  }
+id: contacs_list_in_tab
+label: 'Contacs list in tab'
+behavior_plugins: {  }

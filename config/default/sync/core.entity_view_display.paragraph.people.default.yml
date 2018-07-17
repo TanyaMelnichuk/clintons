@@ -1,0 +1,85 @@
+uuid: e41239a0-eda4-423b-8f58-98e3a172e399
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.people.field_people_detail_position
+    - field.field.paragraph.people.field_people_details
+    - field.field.paragraph.people.field_people_email
+    - field.field.paragraph.people.field_people_name
+    - field.field.paragraph.people.field_people_phone
+    - field.field.paragraph.people.field_people_photo
+    - field.field.paragraph.people.field_people_photo_hover
+    - field.field.paragraph.people.field_people_position
+    - paragraphs.paragraphs_type.people
+  module:
+    - image
+    - telephone
+    - text
+id: paragraph.people.default
+targetEntityType: paragraph
+bundle: people
+mode: default
+content:
+  field_people_detail_position:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_people_details:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_people_email:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_people_name:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_people_phone:
+    weight: 5
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  field_people_photo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_people_photo_hover:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_people_position:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

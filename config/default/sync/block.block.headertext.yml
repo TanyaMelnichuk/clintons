@@ -1,0 +1,25 @@
+uuid: 726b604b-2c73-4b00-abcd-b89025d2c829
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_text:b4715508-a563-4965-99a7-2ed2cde9d041'
+  module:
+    - block_content
+  theme:
+    - clintons
+id: headertext
+theme: clintons
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:b4715508-a563-4965-99a7-2ed2cde9d041'
+settings:
+  id: 'block_content:b4715508-a563-4965-99a7-2ed2cde9d041'
+  label: 'Header Text'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

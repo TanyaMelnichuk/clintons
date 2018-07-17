@@ -1,0 +1,32 @@
+uuid: 7d8e4aff-8764-4bd6-82d5-e7c73dd47341
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gallery.field_gallery_people
+    - field.field.node.gallery.field_gallery_select_team
+    - node.type.gallery
+  module:
+    - entity_reference_revisions
+    - user
+id: node.gallery.default
+targetEntityType: node
+bundle: gallery
+mode: default
+content:
+  field_gallery_people:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_gallery_select_team: true

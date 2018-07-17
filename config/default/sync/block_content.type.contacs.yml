@@ -1,0 +1,8 @@
+uuid: e15bf384-3a81-41e7-b4d1-3e5b5445be46
+langcode: en
+status: true
+dependencies: {  }
+id: contacs
+label: Contact
+revision: 0
+description: ''

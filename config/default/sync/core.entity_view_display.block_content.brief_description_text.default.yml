@@ -1,0 +1,30 @@
+uuid: 878d05fd-b01b-4ebd-b118-baa2fa5b0e48
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brief_description_text
+    - field.field.block_content.brief_description_text.field_text
+    - field.field.block_content.brief_description_text.field_title_section
+  module:
+    - text
+id: block_content.brief_description_text.default
+targetEntityType: block_content
+bundle: brief_description_text
+mode: default
+content:
+  field_text:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title_section:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

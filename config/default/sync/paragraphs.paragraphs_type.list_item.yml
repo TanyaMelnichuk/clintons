@@ -1,0 +1,7 @@
+uuid: 53fe0672-587d-472b-9e33-0e1350ad2c84
+langcode: en
+status: true
+dependencies: {  }
+id: list_item
+label: 'List item'
+behavior_plugins: {  }

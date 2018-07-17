@@ -1,0 +1,25 @@
+uuid: ef9f583f-89d2-45f2-aeb2-b8f8c8183d11
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:tabs_list:c8290fda-e776-4032-84fd-4ef832d39bd0'
+  module:
+    - block_content
+  theme:
+    - clintons
+id: whatwedolist
+theme: clintons
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:c8290fda-e776-4032-84fd-4ef832d39bd0'
+settings:
+  id: 'block_content:c8290fda-e776-4032-84fd-4ef832d39bd0'
+  label: 'What we do list'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

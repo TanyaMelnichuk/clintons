@@ -1,0 +1,25 @@
+uuid: e033c9d8-6fef-4903-beba-e319acb6c317
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:brief_description_text:fd56ccd9-8091-46d5-b8d6-4e209c97c35a'
+  module:
+    - block_content
+  theme:
+    - clintons
+id: briefdescriptioncompany
+theme: clintons
+region: content
+weight: -11
+provider: null
+plugin: 'block_content:fd56ccd9-8091-46d5-b8d6-4e209c97c35a'
+settings:
+  id: 'block_content:fd56ccd9-8091-46d5-b8d6-4e209c97c35a'
+  label: 'Brief description company'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

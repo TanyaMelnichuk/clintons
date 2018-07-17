@@ -1,0 +1,8 @@
+uuid: 0f7ff7e4-b15f-43a9-b7fe-a7cc03db65f8
+langcode: en
+status: true
+dependencies: {  }
+id: tabs_list
+label: 'Tabs list'
+revision: 0
+description: ''

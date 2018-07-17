@@ -1,0 +1,21 @@
+uuid: ba64dbdd-3e42-46e9-9e92-eae5be51440a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carouselpeople_position
+    - paragraphs.paragraphs_type.gallery_people
+  module:
+    - text
+id: paragraph.gallery_people.field_carouselpeople_position
+field_name: field_carouselpeople_position
+entity_type: paragraph
+bundle: gallery_people
+label: 'CarouselPeople position'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,24 @@
+uuid: 6d1c9103-8d0f-4aad-9f38-3cac89dffb25
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.menu-footer
+  module:
+    - system
+  theme:
+    - clintons
+id: menufooter
+theme: clintons
+region: footer
+weight: 0
+provider: null
+plugin: 'system_menu_block:menu-footer'
+settings:
+  id: 'system_menu_block:menu-footer'
+  label: 'Menu footer'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

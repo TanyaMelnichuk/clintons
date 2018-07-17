@@ -1,0 +1,41 @@
+uuid: 43d5efc0-1027-49e2-80ef-5e97c278f364
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.tab_item.field_contact_tab
+    - field.field.paragraph.tab_item.field_subtitle_tab_item
+    - field.field.paragraph.tab_item.field_text_tab_item
+    - paragraphs.paragraphs_type.tab_item
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.tab_item.default
+targetEntityType: paragraph
+bundle: tab_item
+mode: default
+content:
+  field_contact_tab:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_subtitle_tab_item:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text_tab_item:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

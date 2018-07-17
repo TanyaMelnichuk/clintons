@@ -1,0 +1,37 @@
+uuid: 274b9045-2ad0-44e6-b86a-82bfcfd36218
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.contacs_list_in_tab.field_person_name
+    - field.field.paragraph.contacs_list_in_tab.field_photo_person
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.contacs_list_in_tab
+  module:
+    - image
+    - text
+id: paragraph.contacs_list_in_tab.default
+targetEntityType: paragraph
+bundle: contacs_list_in_tab
+mode: default
+content:
+  field_person_name:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_photo_person:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true
