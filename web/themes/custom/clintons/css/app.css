@@ -223,16 +223,19 @@ body {
 }
 
 header {
-    background-color: aqua;
+    background-size: cover;
+    width:100%;
     height: 600px;
 }
 
-#block-headertext p{
+#block-headertext p,
+.main-header p{
     font-size: 70px;
     font-weight: 500;
 }
 
-#block-headertext p span {
+#block-headertext p span ,
+.main-header p span{
     color: #d85989;
     padding: 30px 60px;
     border: 10px solid #1d1d1b;
@@ -1333,7 +1336,8 @@ footer .navbar-expand-lg {
     }
 }
 @media (max-width: 1200px) {
-    #block-headertext p{
+    #block-headertext p,
+    .main-header p{
         font-size: 60px
     }
     .text p{
@@ -1374,7 +1378,8 @@ footer .navbar-expand-lg {
         padding-right: 15px;
         padding-left: 15px;
     }
-    #block-headertext p span {
+    #block-headertext p span,
+    .main-header p span{
         display: block;
         margin-top: 20px;
     }
@@ -1412,7 +1417,8 @@ footer .navbar-expand-lg {
     .navbar-expand-lg .navbar-toggler {
         margin: 5px 15px;
     }
-    #block-headertext p span {
+    #block-headertext p span,
+    .main-header p span{
         padding: 20px 10px;
     }
     .text p{
@@ -1491,7 +1497,8 @@ footer .navbar-expand-lg {
 }
 
 @media (max-width: 567px) {
-    #block-headertext p{
+    #block-headertext p,
+    .main-header p{
         font-size: 32px
     }
     .contact-list {
