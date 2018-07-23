@@ -5,7 +5,9 @@ dependencies:
   config:
     - block_content.type.header_text
     - field.field.block_content.header_text.field_big_text
+    - field.field.block_content.header_text.field_header_image
   module:
+    - image
     - text
 id: block_content.header_text.default
 targetEntityType: block_content
@@ -18,5 +20,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_header_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
 hidden: {  }

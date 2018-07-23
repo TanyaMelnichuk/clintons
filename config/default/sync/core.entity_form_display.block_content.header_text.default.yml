@@ -5,7 +5,10 @@ dependencies:
   config:
     - block_content.type.header_text
     - field.field.block_content.header_text.field_big_text
+    - field.field.block_content.header_text.field_header_image
+    - image.style.thumbnail
   module:
+    - image
     - text
 id: block_content.header_text.default
 targetEntityType: block_content
@@ -19,6 +22,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_header_image:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
     region: content
   info:
     type: string_textfield
