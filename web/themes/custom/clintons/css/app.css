@@ -1016,7 +1016,6 @@ section {
 .text-about-person{
     font-size: 16px;
     font-weight: 100;
-    opacity: 0.8;
     line-height: 30px
 }
 .block-text-about hr{
@@ -1094,19 +1093,21 @@ footer .navbar-expand-lg {
     justify-content: center;
     height: 60px;
     border: 0 !important;
-    background-color: #c9517e;
+    background-color: #f7c457;
 }
 #quicktabs-meet_the_team ul li{
     background: transparent;
     border: 0;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #quicktabs-meet_the_team ul li a{
     color: #fff;
     font-family: 'Roboto Mono', monospace;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 3px;
-    font-size: 12px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     padding: 0 24px;
@@ -1115,12 +1116,12 @@ footer .navbar-expand-lg {
 #quicktabs-meet_the_team ul li a:after{
     content: '+';
     position: absolute;
-    color: #f7c457;
-    font-weight: 300;
+    color: #d85a89;
+    font-weight: 400;
     margin-left: 10px;
-    font-size: 19px;
+    font-size: 25px;
     position: absolute;
-    top: -5px;
+    top: -6px;
     right: 0;
     cursor: pointer;
 }
@@ -1184,7 +1185,7 @@ footer .navbar-expand-lg {
     margin-bottom: 0;
     display: flex;
     z-index: 100000;
-    background-color: #d85a89;
+    background-color: #f7c457;
     padding: 60px 50px;
     min-height: 580px;
 }
@@ -1392,6 +1393,15 @@ footer .navbar-expand-lg {
     }
     .popup.popup-modal{
         height: auto;
+    }
+    .ui-tabs .ui-tabs-nav li{
+        margin: 1px .2em 0 0;
+    }
+    #quicktabs-meet_the_team ul li a{
+        font-size: 14px;
+    }
+    #quicktabs-meet_the_team ul li a:after{
+        font-size: 21px;
     }
 
 
