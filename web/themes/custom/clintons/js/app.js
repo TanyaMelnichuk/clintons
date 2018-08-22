@@ -43,10 +43,10 @@ $(document).ready(function () {
         }
     });
 
-
     $('#carouselPeople').carousel({
-        interval: 20000
+        interval: 2000
     });
+
 })(jQuery);
 
 (function ($) {
@@ -64,6 +64,9 @@ $(document).ready(function () {
             });
         });
 
+    });
+    $(document).ready(function () {
+        $( "#quicktabs-meet_the_team" ).tabs({collapsible: true, active: false });
     });
 
 })(jQuery);
@@ -85,7 +88,7 @@ $(document).ready(function () {
         check.css('display', 'block');
     });
 
-    $(".people-photo.hover span").click(function() {
+    $(".people-photo.hover").click(function() {
         var popup = $(this).closest('.panel.panel-default').find('.popup');
         popup.css('display', 'none');
         var popupContent = popup.html();
