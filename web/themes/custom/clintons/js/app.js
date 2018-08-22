@@ -43,9 +43,25 @@ $(document).ready(function () {
         }
     });
 
-    $('#carouselPeople').carousel({
-        interval: 2000
-    });
+  var currentSlide;
+  var rand;
+  $(document).ready(function() {
+    currentSlide = Math.floor((Math.random() * $('.carousel-item').length));
+    rand = currentSlide;
+    $('#carouselPeople').carousel(currentSlide);
+    $('#carouselPeople').fadeIn(1000);
+    setInterval(function(){
+      while(rand == currentSlide){
+        rand = Math.floor((Math.random() * $('.carousel-item').length));
+      }
+      currentSlide = rand;
+      $('#carouselPeople').carousel(rand);
+    }, 1000000);
+  });
+
+  $('#carouselPeople').carousel({
+    interval: 2000
+  });
 
 })(jQuery);
 
