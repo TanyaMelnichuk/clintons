@@ -4,23 +4,16 @@ status: true
 dependencies:
   config:
     - block_content.type.header_text
-    - field.field.block_content.header_text.field_big_text
     - field.field.block_content.header_text.field_header_image
+    - field.field.block_content.header_text.field_header_text
+    - field.field.block_content.header_text.field_header_text_animation
   module:
     - image
-    - text
 id: block_content.header_text.default
 targetEntityType: block_content
 bundle: header_text
 mode: default
 content:
-  field_big_text:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_header_image:
     weight: 2
     label: hidden
@@ -29,5 +22,21 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
+  field_header_text:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_header_text_animation:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
 hidden: {  }
