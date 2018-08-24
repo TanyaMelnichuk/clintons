@@ -230,21 +230,67 @@ body {
 header {
     background-size: cover;
     width:100%;
-    height: 600px;
+    height: 670px;
 }
 
-#block-headertext p,
-.main-header p{
+.main-header .main-title-header{
     font-size: 70px;
     font-weight: 500;
+    min-width: 260px;
 }
 
 #block-headertext p span ,
-.main-header p span{
-    color: #d85989;
+.main-header .text-animation h1{
+    color: #7600de;
     padding: 30px 60px;
-    border: 10px solid #1d1d1b;
+    font-size: 70px;
+    font-weight: 500;
 }
+.main-header .text-animation{
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+.text-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.text-animation{
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+.text-animation .text{
+    width: 100%;
+    height: 100%;
+    float: left;
+    border: 10px solid #000;
+    text-align: left;
+    white-space:nowrap
+}
+.text-animation .active{
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 50%;
+    left: 75%;
+    border: 10px solid transparent;
+    background: #fff;
+}
+.text-animation .active::after{
+    content: '';
+    height: 176px;
+    width: 10px;
+    background: #000;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+.text-animation .list-text{
+    display: none;
+}
+
 
 /*----------------------------------------*/
 
@@ -368,8 +414,7 @@ section {
 }
 
 .item-description-text {
-    padding: 35px 30px;
-    padding-right: 80px;
+    padding: 35px 80px 35px 30px;
 }
 
 .item-description p {
@@ -624,8 +669,7 @@ section {
 }
 
 .right-block {
-    padding: 0 30px;
-    padding-right: 0;
+    padding: 0 0 0 30px;
     border-left: 1px solid #dadada;
     display: flex;
     flex-direction: column;
@@ -1343,7 +1387,7 @@ footer .navbar-expand-lg {
 }
 @media (max-width: 1200px) {
     #block-headertext p,
-    .main-header p{
+    .main-header .main-title-header{
         font-size: 60px
     }
     .text p{
@@ -1385,9 +1429,15 @@ footer .navbar-expand-lg {
         padding-left: 15px;
     }
     #block-headertext p span,
-    .main-header p span{
-        display: block;
-        margin-top: 20px;
+    .main-header .text-animation h1{
+        font-size: 50px;
+    }
+    .text-header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-header .text-animation{
+        margin-left: 0;
     }
     .text p{
         padding: 0 80px;
@@ -1414,6 +1464,9 @@ footer .navbar-expand-lg {
     #quicktabs-meet_the_team ul li a:after{
         font-size: 21px;
     }
+    .text-animation .text{
+       border-width: 5px;
+    }
 
 
 }
@@ -1424,7 +1477,8 @@ footer .navbar-expand-lg {
         margin: 5px 15px;
     }
     #block-headertext p span,
-    .main-header p span{
+    .main-header p span,
+    .main-header .text-animation h1{
         padding: 20px 10px;
     }
     .text p{
@@ -1437,6 +1491,7 @@ footer .navbar-expand-lg {
     }
     .border-right {
         bottom: -110px;
+
     }
     .list {
         flex-direction: column;
@@ -1504,7 +1559,9 @@ footer .navbar-expand-lg {
 
 @media (max-width: 567px) {
     #block-headertext p,
-    .main-header p{
+    .main-header p,
+    .main-header .main-title-header,
+    .main-header .text-animation h1{
         font-size: 32px
     }
     .contact-list {
