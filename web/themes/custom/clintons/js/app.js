@@ -172,12 +172,12 @@ $(document).ready(function () {
 
             $('div.text h1').text($(items[id]).text());
 
-            var colors = ["#f7c457","#d85989","#7600de"];
+            var colors = {0:"#f7c457",1:"#d85989",2:"#7600de"};
             setInterval(function() {
-                var bodybgarrayno = Math.floor(Math.random() * colors.length);
-                var selectedcolor = colors[bodybgarrayno];
-                $("div.text h1").css("color",selectedcolor);
-            }, 4000);
+                //var bodybgarrayno = colors[id];//Math.floor(Math.random() * colors.length);
+                //var selectedcolor = colors[bodybgarrayno];
+                $("div.text h1").css("color",colors[id]);
+            }, 4100);
 
         }
 
