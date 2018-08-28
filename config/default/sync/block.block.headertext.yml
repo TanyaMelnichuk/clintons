@@ -11,7 +11,7 @@ dependencies:
 id: headertext
 theme: clintons
 region: header
-weight: 0
+weight: -11
 provider: null
 plugin: 'block_content:b4715508-a563-4965-99a7-2ed2cde9d041'
 settings:
