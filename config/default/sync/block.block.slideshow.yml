@@ -1,0 +1,25 @@
+uuid: b3ba985b-66f8-4aed-88b8-1185a0f6503d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:slideshow:22fd3750-fa70-437f-b7d6-c0accbc0c62d'
+  module:
+    - block_content
+  theme:
+    - clintons
+id: slideshow
+theme: clintons
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:22fd3750-fa70-437f-b7d6-c0accbc0c62d'
+settings:
+  id: 'block_content:22fd3750-fa70-437f-b7d6-c0accbc0c62d'
+  label: Slideshow
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

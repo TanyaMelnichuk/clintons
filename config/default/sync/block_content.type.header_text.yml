@@ -1,8 +1,0 @@
-uuid: c26c032b-62ff-44e6-8dc3-25dd074d3736
-langcode: en
-status: true
-dependencies: {  }
-id: header_text
-label: 'Header text'
-revision: 0
-description: ''

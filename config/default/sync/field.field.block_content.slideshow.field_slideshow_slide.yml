@@ -1,0 +1,46 @@
+uuid: c1d18cf6-5c57-4e13-9ffa-be0bff9beddf
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.slideshow
+    - field.storage.block_content.field_slideshow_slide
+    - paragraphs.paragraphs_type.slide
+  module:
+    - entity_reference_revisions
+id: block_content.slideshow.field_slideshow_slide
+field_name: field_slideshow_slide
+entity_type: block_content
+bundle: slideshow
+label: Slideshow
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      slide: slide
+    target_bundles_drag_drop:
+      contacs_list_in_tab:
+        weight: 7
+        enabled: false
+      gallery_people:
+        weight: 8
+        enabled: false
+      list_item:
+        weight: 9
+        enabled: false
+      people:
+        weight: 10
+        enabled: false
+      slide:
+        enabled: true
+        weight: 11
+      tab_item:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

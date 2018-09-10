@@ -54,7 +54,11 @@
             {{ content.field_people_photo }}
           </div>
           <div class="people-photo hover">
-            {{ content.field_people_photo_hover }}
+            {%  if content.field_people_photo_hover|render %}
+              {{ content.field_people_photo_hover }}
+            {% else %}
+              <img src="{{ directory }}/images/image-hover.jpg"/>
+            {% endif %}
             <h2 href="">{{ 'View Profile'|t }}</h2>
             <span class="icon-plus">+</span>
           </div>

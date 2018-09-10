@@ -1,0 +1,8 @@
+uuid: 764d9721-5734-46c4-b8c2-a51e28c1e2a8
+langcode: en
+status: true
+dependencies: {  }
+id: slideshow
+label: Slideshow
+revision: 0
+description: ''

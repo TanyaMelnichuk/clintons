@@ -1,16 +1,16 @@
-uuid: d40e4781-ca1a-418c-8152-a45ca1a80c5d
+uuid: 2a6359f6-c296-4055-9b80-fa57ccf485c4
 langcode: en
 status: true
 dependencies:
   config:
-    - block_content.type.header_text
-    - field.storage.block_content.field_header_image
+    - field.storage.paragraph.field_slide_image
+    - paragraphs.paragraphs_type.slide
   module:
     - image
-id: block_content.header_text.field_header_image
-field_name: field_header_image
-entity_type: block_content
-bundle: header_text
+id: paragraph.slide.field_slide_image
+field_name: field_slide_image
+entity_type: paragraph
+bundle: slide
 label: Image
 description: ''
 required: false
