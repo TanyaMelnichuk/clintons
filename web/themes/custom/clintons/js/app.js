@@ -7,7 +7,7 @@ $(document).ready(function () {
             top = $(id).offset().top;
         $('body,html').animate({
             scrollTop: top
-        }, 1000);
+        }, 2000);
     });
 });
 })(jQuery);
@@ -81,8 +81,21 @@ $(document).ready(function () {
         });
 
     });
-    $(document).ready(function () {
-        $( "#quicktabs-meet_the_team" ).tabs({collapsible: true, active: false });
+
+    $(function () {
+        $("#quicktabs-meet_the_team").tabs({
+            collapsible: true,
+            active: false,
+            show: {
+                effect: "slideDown",
+                duration: "slow"
+            },
+            hide: {
+                effect: "slideUp",
+                duration: "slow"
+            }
+        });
+
     });
 
 })(jQuery);
@@ -189,10 +202,12 @@ $(document).ready(function () {
 
     function parallax(){
         var scrolled = $(window).scrollTop();
-        $('.border-left').css('top', +(scrolled * 0.4) + 'px');
+        $('.border-left').css('top', +(scrolled * 0.3) + 'px');
         $('.border-right').css('bottom', -(scrolled * 0.3) + 'px');
     }
     $(window).scroll(function(e){
         parallax();
     });
+
+
 })(jQuery);

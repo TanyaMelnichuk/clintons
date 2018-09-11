@@ -101,7 +101,8 @@ body {
     justify-content: space-between;
     width: 100%;
     z-index:10;
-    padding: 20px 60px;
+    top: 0;
+    padding: 0 60px;
     background: #fff;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
 }
@@ -299,8 +300,30 @@ header {
 .text-animation .list-text{
     display: none;
 }
-
-
+.sticky-header{
+    padding: 0 60px;
+}
+.dialog-off-canvas-main-canvas{
+    position: relative;
+}
+#block-slideshow{
+    margin-top: 70px;
+    height: 600px;
+}
+.slick, .slick-wrapper,
+.slick-initialized,
+.slick-slider .slick-track, .slick-slider .slick-list{
+    height: 100%;
+}
+.slick-track{
+    width: 100%;
+    height: 100%;
+}
+.slick img, .slick iframe{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
 /*----------------------------------------*/
 
 /*content CSS
@@ -333,6 +356,7 @@ section {
     position: absolute;
     top: -70px;
     left: 0;
+    z-index: 1;
 }
 
 .border-right {
@@ -345,6 +369,7 @@ section {
     position: absolute;
     bottom: -150px;
     right: 0;
+    z-index: 1;
 }
 
 .title h2{
@@ -811,20 +836,23 @@ section {
     margin-top: 20px;
 }
 
-.panel-thumbnail .name p{
+.panel-thumbnail .name p,
+.panel-thumbnail .name{
     margin-bottom: 0;
     font-size: 20px;
     font-weight: 300;
     margin-top: 20px;
     text-align: center;
 }
-.panel-thumbnail .position p {
+.panel-thumbnail .position p,
+.panel-thumbnail .position{
     font-size: 13px;
     font-weight: 400;
     margin-bottom: 8px;
     text-transform: uppercase;
 }
-.panel-thumbnail .detail-position p {
+.panel-thumbnail .detail-position p,
+.panel-thumbnail .detail-position{
     margin-bottom: 0;
     font-size: 12px;
     font-weight: 100;
@@ -1121,14 +1149,17 @@ footer .navbar-expand-lg {
     margin-bottom: 0;
     font-size: 10px;
 }
-.paragraph--type--people .name p{
+.paragraph--type--people .name p,
+.panel-thumbnail .name{
     color: #d85a89;
     font-weight: 500;
 }
-.paragraph--type--people .position p{
+.paragraph--type--people .position p,
+.panel-thumbnail .position{
     text-align: center;
 }
-.paragraph--type--people .detail-position p{
+.paragraph--type--people .detail-position p,
+.panel-thumbnail .detail-position{
     text-align: center;
 }
 .people-photo.hover img{
@@ -1411,7 +1442,7 @@ footer .navbar-expand-lg {
         max-width: 33%;
     }
     .sticky-header{
-        padding: 20px 30px;
+        padding: 0 30px;
     }
 }
 
@@ -1480,7 +1511,8 @@ footer .navbar-expand-lg {
        border-width: 5px;
     }
     .sticky-header{
-        padding: 20px 15px;
+        padding: 0 15px;
+        height: 70px;
     }
 
 }
