@@ -324,6 +324,30 @@ header {
     height: 600px;
     object-fit: cover;
 }
+.slideshow{
+    position: relative;
+}
+
+.main-title-header{
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-title-header span{
+    font-size: 70px;
+    font-weight: 500;
+}
+.main-title-header .second {
+    color: #d85989;
+    padding: 30px 60px;
+    border: 10px solid #1d1d1b;
+    margin-left: 50px;
+}
 /*----------------------------------------*/
 
 /*content CSS
@@ -784,6 +808,7 @@ section {
     border-bottom: 1px solid;
     margin-left: 5px;
     margin-bottom: 0;
+    padding-right: 0;
 }
 .foto-with-name img{
     width: 50px;
@@ -1427,7 +1452,10 @@ footer .navbar-expand-lg {
 }
 @media (max-width: 1200px) {
     #block-headertext p,
-    .main-header .main-title-header{
+    .main-header .main-title-header,
+    .main-title-header span{
+        font-size: 60px
+    }{
         font-size: 60px
     }
     .text p{
@@ -1513,6 +1541,13 @@ footer .navbar-expand-lg {
     .sticky-header{
         padding: 0 15px;
         height: 70px;
+    }
+    .main-title-header{
+        flex-direction: column;
+    }
+    .main-title-header .second{
+        margin-left: 0;
+        margin-top: 20px;
     }
 
 }
@@ -1600,6 +1635,9 @@ footer .navbar-expand-lg {
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .main-title-header .second{
+        padding: 20px 10px;
+    }
 
 }
 
@@ -1653,6 +1691,10 @@ footer .navbar-expand-lg {
     .right .icon-close{
         right: 10px;
         top: 0;
+    }
+
+    .main-title-header span {
+        font-size: 32px
     }
 
 }

@@ -43,8 +43,10 @@
   <div class="slideshow">
     {% block content %}
       <div class="image">{{ content.field_slide_image }}</div>
-      <span class="first">{{ content.field_slide_first_text }}</span>
-      <span class="second">{{ content.field_slide_second_text }}</span>
+        <div class="main-title-header">
+            <span class="first">{{ content.field_slide_first_text }}</span>
+            <span class="second">{{ content.field_slide_second_text }}</span>
+        </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}
