@@ -1,0 +1,19 @@
+uuid: e8da0d9a-44c4-4e2b-b8b3-9270ec60f05b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_first_text
+    - paragraphs.paragraphs_type.slide
+id: paragraph.slide.field_slide_first_text
+field_name: field_slide_first_text
+entity_type: paragraph
+bundle: slide
+label: 'First Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

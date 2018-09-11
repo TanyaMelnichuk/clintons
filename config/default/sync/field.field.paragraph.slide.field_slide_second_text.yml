@@ -1,0 +1,19 @@
+uuid: 33eef4e3-5e5c-427e-bf5a-921ccc0dc3ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slide_second_text
+    - paragraphs.paragraphs_type.slide
+id: paragraph.slide.field_slide_second_text
+field_name: field_slide_second_text
+entity_type: paragraph
+bundle: slide
+label: 'Second Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

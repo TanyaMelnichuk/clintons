@@ -3,8 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.paragraph.slide.field_slide_first_text
     - field.field.paragraph.slide.field_slide_image
-    - field.field.paragraph.slide.field_slide_text
+    - field.field.paragraph.slide.field_slide_second_text
     - paragraphs.paragraphs_type.slide
   module:
     - image
@@ -13,6 +14,14 @@ targetEntityType: paragraph
 bundle: slide
 mode: default
 content:
+  field_slide_first_text:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_slide_image:
     weight: 0
     label: hidden
@@ -22,8 +31,8 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_slide_text:
-    weight: 1
+  field_slide_second_text:
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
