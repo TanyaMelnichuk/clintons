@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.people.field_people_detail_position
     - field.field.paragraph.people.field_people_details
     - field.field.paragraph.people.field_people_email
-    - field.field.paragraph.people.field_people_name
     - field.field.paragraph.people.field_people_phone
     - field.field.paragraph.people.field_people_photo
     - field.field.paragraph.people.field_people_photo_hover
@@ -37,13 +36,6 @@ content:
     region: content
   field_people_email:
     weight: 6
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
-    region: content
-  field_people_name:
-    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
