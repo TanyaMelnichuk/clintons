@@ -1,0 +1,33 @@
+uuid: 5af39bd2-dbae-43ea-9b9f-5ee27a6e5195
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.people_service
+    - field.field.node.gallery.field_gallery_people
+    - field.field.node.gallery.field_gallery_select_team
+    - node.type.gallery
+  module:
+    - entity_reference_revisions
+    - user
+id: node.gallery.people_service
+targetEntityType: node
+bundle: gallery
+mode: people_service
+content:
+  field_gallery_people:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: people_service
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_gallery_select_team: true

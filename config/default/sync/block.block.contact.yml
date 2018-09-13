@@ -11,7 +11,7 @@ dependencies:
 id: contact
 theme: clintons
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: 'block_content:a70b9d5e-20fe-437c-b2b8-ab5928cbedce'
 settings:

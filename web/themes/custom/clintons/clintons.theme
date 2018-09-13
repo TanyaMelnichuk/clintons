@@ -1,19 +1,32 @@
 <?php
 
+///**
+// * Implements template_preprocess_paragraph().
+// *
+// * @param array $variables
+// *   An associative array containing:
+// *   - elements: An array of elements to display in view mode.
+// *   - paragraph: The paragraph object.
+// *   - view_mode: View mode; e.g., 'full', 'teaser'...
+// */
+//function clintons_preprocess_paragraph(&$variables) {
+//  $paragraph = $variables['paragraph'];
+//  if ($paragraph->getType() == 'list_item') {
+//    $rand = (rand(10,100));
+//    $id_title = explode(' ', trim($paragraph->field_name->value));
+//    $id_title = str_replace(',', '', $id_title);
+//    $variables['id_title'] = $id_title[0] . $rand;
+//  }
+//}
+
 /**
- * Implements template_preprocess_paragraph().
- *
- * @param array $variables
- *   An associative array containing:
- *   - elements: An array of elements to display in view mode.
- *   - paragraph: The paragraph object.
- *   - view_mode: View mode; e.g., 'full', 'teaser'...
+ * Implements hook_preprocess_HOOK() for node templates.
  */
-function clintons_preprocess_paragraph(&$variables) {
-  $paragraph = $variables['paragraph'];
-  if ($paragraph->getType() == 'list_item') {
-    $rand = (rand(10,100));
-    $id_title = explode(' ', trim($paragraph->field_name->value));
+function clintons_preprocess_node(&$variables) {
+  $node = &$variables['node'];
+  if ($node->getType() == 'service') {
+    $rand = (rand(10, 100));
+    $id_title = explode(' ', trim($node->getTitle()));
     $id_title = str_replace(',', '', $id_title);
     $variables['id_title'] = $id_title[0] . $rand;
   }

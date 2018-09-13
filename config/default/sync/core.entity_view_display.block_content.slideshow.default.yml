@@ -23,9 +23,9 @@ content:
       cache: 0
       override: true
       overridables:
-        arrows: arrows
         autoplay: autoplay
         randomize: randomize
+        arrows: '0'
         dots: '0'
         draggable: '0'
         infinite: '0'

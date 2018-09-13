@@ -1,0 +1,10 @@
+uuid: d6fa90c0-0cd1-41e4-9d1e-1f8a93ca0ea0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.people_service
+label: 'People service'
+targetEntityType: paragraph
+cache: true

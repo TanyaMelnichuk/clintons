@@ -11,7 +11,7 @@ dependencies:
 id: blockpeople
 theme: clintons
 region: content
-weight: -9
+weight: -8
 provider: null
 plugin: 'block_content:75fb9b8f-05d7-4bc9-8e70-4e6003872b6e'
 settings:

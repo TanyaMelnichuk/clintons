@@ -1,0 +1,28 @@
+uuid: 8b6016ce-e8b7-48cb-b0c1-3a6cfaf2b0f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_service_people
+    - node.type.gallery
+    - node.type.service
+id: node.service.field_service_people
+field_name: field_service_people
+entity_type: node
+bundle: service
+label: People
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      gallery: gallery
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

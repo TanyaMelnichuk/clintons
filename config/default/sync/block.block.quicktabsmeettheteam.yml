@@ -9,7 +9,7 @@ dependencies:
 id: quicktabsmeettheteam
 theme: clintons
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: 'quicktabs_block:meet_the_team'
 settings:

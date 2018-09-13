@@ -1,0 +1,47 @@
+uuid: cf68515c-dd39-4422-a8e4-adb15139a9b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.service.field_service_people
+    - field.field.node.service.field_service_subtitle
+    - field.field.node.service.field_service_text
+    - node.type.service
+  module:
+    - text
+    - user
+id: node.service.default
+targetEntityType: node
+bundle: service
+mode: default
+content:
+  field_service_people:
+    weight: 104
+    label: hidden
+    settings:
+      view_mode: people_service
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_service_subtitle:
+    weight: 102
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_service_text:
+    weight: 103
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

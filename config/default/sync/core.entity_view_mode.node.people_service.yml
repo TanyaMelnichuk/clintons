@@ -1,0 +1,10 @@
+uuid: ef785d64-07c2-4503-83e1-d3fc90671218
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.people_service
+label: 'People service'
+targetEntityType: node
+cache: true
