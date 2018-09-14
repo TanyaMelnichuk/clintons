@@ -100,7 +100,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    z-index:10;
+    z-index:10000000;
     top: 0;
     padding: 0 60px;
     background: #fff;
@@ -348,6 +348,19 @@ header {
     border: 10px solid #1d1d1b;
     margin-left: 50px;
 }
+#people .title{
+    padding: 50px 0;
+}
+#people{
+    margin-top: -50px;
+    padding-top: 50px;
+}
+.mt5{
+    margin-top: 50px;
+}
+#people .title h2{
+    padding-bottom: 0;
+}
 /*----------------------------------------*/
 
 /*content CSS
@@ -485,11 +498,13 @@ section {
 .item-description:first-child p{
     margin-bottom: 0;
 }
-.item-title p{
+.item-title p.item-title{
     font-weight: 600;
     color: #1d1d1b!important;
 }
-
+.item-title p{
+    color: #1d1d1b!important;
+}
 .icon-plus {
     position: absolute;
     width: 70px;
@@ -521,7 +536,6 @@ section {
 }
 
 .image-people {
-    margin-top: 20px;
     position: relative;
     background-color: #d85a89;
     opacity: 0.9999;
@@ -1082,7 +1096,7 @@ section {
     display: flex;
     align-items: center;
     color: #1d1d1b;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 16px;
     position: relative;
 }
@@ -1140,6 +1154,31 @@ section {
 .hover-description{
     display: none;
 }
+.popup .name{
+    font-size: 30px;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+.popup .position{
+    font-weight: 100;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.popup .detail-position{
+    font-weight: 100;
+    font-size: 16px;
+    font-style: italic;
+    opacity: 0.8;
+}
+.popup .text-about-person{
+    font-size: 16px;
+    font-weight: 100;
+    opacity: 0.8;
+    line-height: 30px;
+    margin-top: 20px;
+
+}
 /*----------------------------------------*/
 
 /*footer CSS
@@ -1174,20 +1213,20 @@ footer .navbar-expand-lg {
     margin-bottom: 0;
     font-size: 10px;
 }
-.paragraph--type--people .name p,
-.panel-thumbnail .name{
+#quicktabs-meet_the_team .paragraph--type--people .name p,
+#quicktabs-meet_the_team .panel-thumbnail .name{
     color: #d85a89;
     font-weight: 500;
 }
-.paragraph--type--people .position p,
-.panel-thumbnail .position{
+#quicktabs-meet_the_team .paragraph--type--people .position p,
+#quicktabs-meet_the_team .panel-thumbnail .position{
     text-align: center;
 }
-.paragraph--type--people .detail-position p,
-.panel-thumbnail .detail-position{
+#quicktabs-meet_the_team .paragraph--type--people .detail-position p,
+#quicktabs-meet_the_team .panel-thumbnail .detail-position{
     text-align: center;
 }
-.people-photo.hover img{
+#quicktabs-meet_the_team .people-photo.hover img{
     height: 211px;
 }
 /*----------------------------------------*/
@@ -1253,7 +1292,7 @@ footer .navbar-expand-lg {
 #quicktabs-meet_the_team .ui-tabs-nav{
     margin-bottom: 80px;
 }
-.views-row{
+#quicktabs-meet_the_team .views-row{
     flex: 0 0 25%;
     max-width: 25%;
     padding-left: 20px;
@@ -1266,16 +1305,16 @@ footer .navbar-expand-lg {
     display: flex;
     flex-wrap: wrap;
 }
-.people-photo.hover{
+#quicktabs-meet_the_team .people-photo.hover{
     display: none;
     position: relative;
 }
-.people-photo img{
+#quicktabs-meet_the_team .people-photo img{
     height: 260px;
     object-fit: cover;
     width: 100%;
 }
-.people-photo.hover h2{
+#quicktabs-meet_the_team .people-photo.hover h2{
     background-color: #1d1d1b;
     color: #fff;
     line-height: 50px;
@@ -1287,7 +1326,7 @@ footer .navbar-expand-lg {
     float: left;
     width: calc(100% - 49px);
 }
-.people-photo.hover .icon-plus{
+#quicktabs-meet_the_team .people-photo.hover .icon-plus{
     width: 49px;
     height: 49px;
     position: relative;
@@ -1386,10 +1425,11 @@ footer .navbar-expand-lg {
     padding-top: 20px;
 }
 .right .icon-close{
-    font-size: 20px;
+    font-size: 50px;
     right: 30px;
     top: 30px;
     z-index: 1000;
+    font-weight: 100;
 }
 .panel-thumbnail .icon-close{
     display: none;
@@ -1405,6 +1445,8 @@ footer .navbar-expand-lg {
     margin-bottom: 0;
     font-weight:500;
 }
+
+
 .popup .right .position p{
     font-weight: 100;
     font-style: normal;
@@ -1428,6 +1470,46 @@ footer .navbar-expand-lg {
 
 .ui-tabs-hide {
     display: none !important;
+}
+#what_we_do .views-row{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 0;
+    margin-bottom: 60px;
+    cursor: pointer;
+    position: relative;
+}
+.bottom-contacts p {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.item-description .paragraph--view-mode--people-service{
+    padding-right: 15px;
+}
+.item-description .people-photo{
+    display: block !important;
+}
+
+.item-description .people-photo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    object-fit: cover;
+}
+.item-description .panel-thumbnail{
+    display: flex;
+    align-items: center;
+}
+.item-description .panel-thumbnail .name{
+    font-weight: 600;
+    font-size: 15px;
+    border-bottom: 1px solid;
+    margin: 0 5px;
+}
+#block-views-block-services-services{
+    position: relative;
 }
 /*----------------------------------------*/
 
@@ -1456,8 +1538,8 @@ footer .navbar-expand-lg {
     .main-title-header span{
         font-size: 60px
     }{
-        font-size: 60px
-    }
+    font-size: 60px
+}
     .text p{
         padding: 0 150px;
     }
@@ -1536,7 +1618,7 @@ footer .navbar-expand-lg {
         font-size: 21px;
     }
     .text-animation .text{
-       border-width: 5px;
+        border-width: 5px;
     }
     .sticky-header{
         padding: 0 15px;

@@ -36,9 +36,11 @@
  * @see template_preprocess_field()
  */
 #}
-<span class="icon-close">&times;</span>
-<div{{ attributes }} class="name">
+
+<div{{ attributes }} class="item-description-text">
     {% for item in items %}
-        {{ item.content }}
+        <div class="item-title">
+            <p>{{ item.content }}</p>
+        </div>
     {% endfor %}
 </div>
