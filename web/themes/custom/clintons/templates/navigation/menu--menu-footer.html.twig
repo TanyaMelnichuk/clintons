@@ -30,7 +30,7 @@
   {% import _self as menus %}
   <footer>
     <nav class="navbar navbar-expand-lg navbar-toggleable-s">
-      <a class="navbar-brand" href="index.html">Clintons.</a>
+      <a class="navbar-brand" href="index.html">{{ 'Clintons.'|t }}</a>
       <ul class="navbar-nav">
         {% for item in items %}
           <li{{ item.attributes }} class="nav-item">
@@ -43,7 +43,8 @@
       </ul>
     </nav>
     <div class="bottom-footer">
-      <p>&copy; 2018 Clintons. All rights reserved</p>
+      <p>{{ '&copy; 2018 Clintons. All rights reserved'|t }}</p>
+      <p></p>
     </div>
   </footer>
 {% endmacro %}
