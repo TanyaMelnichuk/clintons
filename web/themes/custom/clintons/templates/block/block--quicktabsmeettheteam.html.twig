@@ -26,19 +26,18 @@
  */
 #}
 <div {{ attributes }}>
-    {{ title_prefix }}
-    {% if label %}
-    <section class="pt-0 pb-0" {{ attributes }}>
-        <div class="bottom-people">
-            <div class="title-team">
-                <h3{{ title_attributes }}>{{ label }}</h3>
-            </div>
-        </div>
-    </section>
-    {% endif %}
-    {{ title_suffix }}
-    {% block content %}
-        {{ content }}
-    {% endblock %}
-
+  {{ title_prefix }}
+  {% if label %}
+  <section class="pt-0 pb-0" {{ attributes }}>
+    <div class="bottom-people">
+      <div class="title-team">
+        <h3{{ title_attributes }}>{{ label }}</h3>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
 </div>

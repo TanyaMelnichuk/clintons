@@ -1,12 +1,12 @@
 <div{{ attributes }}>
-    {{ title_prefix }}
-    {{ title_suffix }}
-    {% block content %}
-        <section id="people" class="padding-min pb-0">
-                <div class="title">
-                        <h2{{ title_attributes }}>{{ label }}</h2>
-                </div>
-            {{ content }}
-        </section>
-    {% endblock %}
+  {{ title_prefix }}
+  {{ title_suffix }}
+  {% block content %}
+    <section id="people" class="padding-min pb-0">
+      <div class="title">
+        <h2{{ title_attributes }}>{{ label }}</h2>
+      </div>
+      {{ content }}
+    </section>
+  {% endblock %}
 </div>

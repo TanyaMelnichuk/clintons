@@ -26,27 +26,25 @@
  */
 #}
 <div{{ attributes }}>
-    {{ title_prefix }}
-
-    {{ title_suffix }}
-    {% block content %}
-        <section id="what_we_do" class="back-blue">
-            <div class="width-container">
-                {% if label %}
-                    <div class="title title-white">
-                        <h2{{ title_attributes }}>{{ label }}</h2>
-                    </div>
-                {% endif %}
-                <div class="list" {{ attributes }}>
-                    <div class="column column-one">
-                        {{ content }}
-                    </div>
-                    <div class="column column-two">
-                        {{ content }}
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    {% endblock %}
+  {{ title_prefix }}
+  {{ title_suffix }}
+  {% block content %}
+    <section id="what_we_do" class="back-blue">
+      <div class="width-container">
+        {% if label %}
+          <div class="title title-white">
+            <h2{{ title_attributes }}>{{ label }}</h2>
+          </div>
+        {% endif %}
+        <div class="list" {{ attributes }}>
+          <div class="column column-one">
+            {{ content }}
+          </div>
+          <div class="column column-two">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {% endblock %}
 </div>
