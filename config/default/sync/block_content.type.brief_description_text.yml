@@ -5,4 +5,4 @@ dependencies: {  }
 id: brief_description_text
 label: 'Brief description text'
 revision: 0
-description: 'Block for text'
+description: ''

@@ -3,46 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.tab_item.field_contact_tab
-    - field.field.paragraph.tab_item.field_subtitle_tab_item
-    - field.field.paragraph.tab_item.field_text_tab_item
     - paragraphs.paragraphs_type.tab_item
-  module:
-    - paragraphs
-    - text
 id: paragraph.tab_item.default
 targetEntityType: paragraph
 bundle: tab_item
 mode: default
-content:
-  field_contact_tab:
-    type: entity_reference_paragraphs
-    weight: 3
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-    third_party_settings: {  }
-    region: content
-  field_subtitle_tab_item:
-    weight: 1
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
-  field_text_tab_item:
-    weight: 2
-    settings:
-      rows: 5
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea
-    region: content
+content: {  }
 hidden:
   created: true
   status: true
