@@ -100,7 +100,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    z-index:10000000;
+    z-index:100;
     top: 0;
     padding: 0 60px;
     background: #fff;
@@ -1337,7 +1337,7 @@ footer .navbar-expand-lg {
     margin-right: auto;
     margin-bottom: 0;
     display: flex;
-    z-index: 100000;
+    z-index: 10;
     background-color: #f7c457;
     padding: 60px 50px;
     min-height: 580px;
@@ -1472,8 +1472,6 @@ footer .navbar-expand-lg {
     display: none !important;
 }
 #what_we_do .views-row{
-    flex: 0 0 50%;
-    max-width: 50%;
     padding-left: 0;
     margin-bottom: 60px;
     cursor: pointer;
@@ -1504,9 +1502,10 @@ footer .navbar-expand-lg {
 }
 .item-description .panel-thumbnail .name{
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
     border-bottom: 1px solid;
     margin: 0 5px;
+    line-height: 14px;
 }
 #block-views-block-services-services{
     position: relative;

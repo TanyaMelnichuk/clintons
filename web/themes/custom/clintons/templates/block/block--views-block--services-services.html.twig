@@ -37,7 +37,14 @@
                         <h2{{ title_attributes }}>{{ label }}</h2>
                     </div>
                 {% endif %}
-                {{ content }}
+                <div class="list" {{ attributes }}>
+                    <div class="column column-one">
+                        {{ content }}
+                    </div>
+                    <div class="column column-two">
+                        {{ content }}
+                    </div>
+                </div>
 
             </div>
         </section>
