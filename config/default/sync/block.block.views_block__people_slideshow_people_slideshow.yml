@@ -1,0 +1,24 @@
+uuid: 5d9c82e4-f031-4d31-9dd2-e3ed7bb32f43
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.people_slideshow
+  module:
+    - views
+  theme:
+    - clintons
+id: views_block__people_slideshow_people_slideshow
+theme: clintons
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:people_slideshow-people_slideshow'
+settings:
+  id: 'views_block:people_slideshow-people_slideshow'
+  label: People
+  provider: views
+  label_display: visible
+  views_label: People
+  items_per_page: '5'
+visibility: {  }

@@ -11,8 +11,8 @@ id: paragraph.people.field_people_photo
 field_name: field_people_photo
 entity_type: paragraph
 bundle: people
-label: Photo
-description: ''
+label: 'Main Image (BW)'
+description: 'Will be used: meet the team, what we do'
 required: false
 translatable: false
 default_value: {  }

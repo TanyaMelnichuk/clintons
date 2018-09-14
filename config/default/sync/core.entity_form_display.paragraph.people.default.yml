@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.people.field_people_email
     - field.field.paragraph.people.field_people_phone
     - field.field.paragraph.people.field_people_photo
+    - field.field.paragraph.people.field_people_photo_carousel
     - field.field.paragraph.people.field_people_photo_hover
     - field.field.paragraph.people.field_people_position
     - image.style.thumbnail
@@ -54,6 +55,14 @@ content:
     region: content
   field_people_photo:
     weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_people_photo_carousel:
+    weight: 8
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

@@ -1,0 +1,10 @@
+uuid: e7794457-40af-4a27-90f2-3d9dccf2cc90
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.people_slideshow
+label: 'People slideshow'
+targetEntityType: node
+cache: true

@@ -11,7 +11,7 @@ dependencies:
 id: briefdescriptioncompany
 theme: clintons
 region: content
-weight: -11
+weight: -12
 provider: null
 plugin: 'block_content:fd56ccd9-8091-46d5-b8d6-4e209c97c35a'
 settings:

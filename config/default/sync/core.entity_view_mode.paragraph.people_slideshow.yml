@@ -1,0 +1,10 @@
+uuid: 9d2fb79d-39b8-4f24-b8f2-2deb95a06207
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.people_slideshow
+label: 'People slideshow'
+targetEntityType: paragraph
+cache: true

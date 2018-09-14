@@ -11,7 +11,7 @@ dependencies:
 id: whatwedolist
 theme: clintons
 region: content
-weight: -10
+weight: -11
 provider: null
 plugin: 'block_content:c8290fda-e776-4032-84fd-4ef832d39bd0'
 settings:

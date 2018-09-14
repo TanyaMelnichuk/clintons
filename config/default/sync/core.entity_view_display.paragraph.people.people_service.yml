@@ -9,6 +9,7 @@ dependencies:
     - field.field.paragraph.people.field_people_email
     - field.field.paragraph.people.field_people_phone
     - field.field.paragraph.people.field_people_photo
+    - field.field.paragraph.people.field_people_photo_carousel
     - field.field.paragraph.people.field_people_photo_hover
     - field.field.paragraph.people.field_people_position
     - paragraphs.paragraphs_type.people
@@ -22,28 +23,28 @@ bundle: people
 mode: people_service
 content:
   field_people_detail_position:
-    weight: 3
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_people_details:
-    weight: 7
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_people_email:
-    weight: 6
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
   field_people_phone:
-    weight: 5
+    weight: 3
     label: hidden
     settings:
       title: ''
@@ -59,20 +60,13 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_people_photo_hover:
-    weight: 4
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_people_position:
-    weight: 2
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: content
-hidden: {  }
+hidden:
+  field_people_photo_carousel: true
+  field_people_photo_hover: true

@@ -1,18 +1,18 @@
-uuid: 47e431a4-8ca7-40f5-989d-dd8ab62917c2
+uuid: 144f9af1-60fc-4140-a1e1-d037567f4d0a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_people_photo_hover
+    - field.storage.paragraph.field_people_photo_carousel
     - paragraphs.paragraphs_type.people
   module:
     - image
-id: paragraph.people.field_people_photo_hover
-field_name: field_people_photo_hover
+id: paragraph.people.field_people_photo_carousel
+field_name: field_people_photo_carousel
 entity_type: paragraph
 bundle: people
-label: 'Yellow Image (SVG)'
-description: "Hover state, will be used: meet the team\r\n"
+label: 'Pink Image (SVG)'
+description: 'Carousel, will be used: people'
 required: false
 translatable: false
 default_value: {  }
@@ -28,11 +28,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: a66c3b69-b1ea-46a6-9e39-48ffaeceef43
-    alt: image
+    uuid: 8c77b7b1-ba51-453f-b820-d38ede68b7b1
+    alt: ''
     title: ''
-    width: 255
-    height: 206
+    width: 180
+    height: 245
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

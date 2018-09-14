@@ -40,47 +40,21 @@
 #}
 {%
   set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-  ]
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+]
 %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       <div class="panel panel-default">
         <div class="panel-thumbnail">
-          <div class="people-photo default">
-            {{ content.field_people_photo }}
-          </div>
-          <div class="people-photo hover">
-            {{ content.field_people_photo_hover }}
-            <h2 href="">{{ 'View Profile'|t }}</h2>
-            <span class="icon-plus">+</span>
-          </div>
-          <span class="icon-close fa fa-times"></span>
-          <div class="name">
-            {{ title }}
-          </div>
+          {{ content.field_people_photo_carousel }}
+          {{ title }}
           {{ content.field_people_position }}
           {{ content.field_people_detail_position }}
-        </div>
-        <div class="popup">
-          <div class="left">
-            <span class="icon-close fa fa-times"></span>
-            <div class="name">
-              {{ title }}
-            </div>
-            {{ content.field_people_phone }}
-            {{ content.field_people_email }}
-          </div>
-          <div class="right">
-            {{ title_node }}
-            {{ content.field_people_position }}
-            <span>|</span>
-            {{ content.field_people_detail_position }}
-            {{ content.field_people_details }}
-          </div>
         </div>
       </div>
     {% endblock %}
