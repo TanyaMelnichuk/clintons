@@ -31,7 +31,8 @@
         "drush/drush": "^9.0.0",
         "drupal/blazy": "^1.0@RC",
         "drupal/slick": "^1.0",
-        "drupal/slick_paragraphs": "^1.0@RC"
+        "drupal/slick_paragraphs": "^1.0@RC",
+        "drupal/paragraphs_admin": "^1.0"
     },
     "replace": {
         "drupal/drupal": "*"

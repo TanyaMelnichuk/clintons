@@ -61,17 +61,30 @@
           <div class="left">
             <span class="icon-close fa fa-times"></span>
             {{ content.field_people_photo }}
-            {{ content.field_people_phone }}
-            {{ content.field_people_email }}
+            <div class="block-bottom-contacts phone-contacts">
+              <i class="fa fa-phone"></i>
+              {{ content.field_people_phone }}
+            </div>
+            <div class="block-bottom-contacts email-contacts">
+              <a href="#"><i class="fa fa-at"></i>
+                {{ content.field_people_email }}
+              </a>
+            </div>
           </div>
           <div class="right">
             <div class="name">
               {{ title }}
             </div>
-            {{ content.field_people_position }}
+            <div class="position">
+              {{ content.field_people_position }}
+            </div>
             <span>|</span>
-            {{ content.field_people_detail_position }}
-            {{ content.field_people_details }}
+            <div class="detail-position">
+              {{ content.field_people_detail_position }}
+            </div>
+            <div class="text-about-person">
+              {{ content.field_people_details }}
+            </div>
           </div>
         </div>
       </div>

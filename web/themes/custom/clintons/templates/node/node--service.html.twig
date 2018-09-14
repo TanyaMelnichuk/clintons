@@ -85,9 +85,20 @@
   </div>
   <div class="collapse" id="{{ id_title }}">
     <div class="item-description">
-      {{ content.field_service_subtitle }}
-      {{ content.field_service_text }}
-      {{ content.field_service_people }}
+      <div class="item-description-text">
+        <div class="item-title">
+          <p>{{ content.field_service_subtitle }}</p>
+        </div>
+      </div>
+      <div class="item-description-text">
+        <div class="item-title">
+          <p>{{ content.field_service_text }}</p>
+        </div>
+      </div>
+      <div class="bottom-contacts">
+        <p>{{ 'Contacts:'|t }}</p>
+        {{ content.field_service_people }}
+      </div>
     </div>
   </div>
 </div>

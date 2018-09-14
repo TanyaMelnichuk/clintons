@@ -39,7 +39,12 @@
       {{ title_suffix }}
       {% block content %}
         <div class="list">
-          {{ content }}
+          <div class="map">
+            {{ content.field_map }}
+          </div>
+          <div class="contact-list">
+            {{ content.field_address }}
+          </div>
         </div>
       {% endblock %}
     </div>

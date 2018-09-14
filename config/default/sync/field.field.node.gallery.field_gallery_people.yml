@@ -33,9 +33,6 @@ settings:
       list_item:
         weight: 7
         enabled: false
-      tab_item:
-        weight: 8
-        enabled: false
       people:
         enabled: true
         weight: 9

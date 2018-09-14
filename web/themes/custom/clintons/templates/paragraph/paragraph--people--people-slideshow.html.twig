@@ -55,8 +55,12 @@
           <div class="name">
             {{ title }}
           </div>
-          {{ content.field_people_position }}
-          {{ content.field_people_detail_position }}
+          <div class="position">
+            {{ content.field_people_position }}
+          </div>
+          <div class="detail-position">
+            {{ content.field_people_detail_position }}
+          </div>
         </div>
       </div>
     {% endblock %}

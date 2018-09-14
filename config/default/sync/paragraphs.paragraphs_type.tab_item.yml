@@ -1,7 +1,0 @@
-uuid: 25592575-63aa-414f-8d4e-cbb74e2df4fb
-langcode: en
-status: true
-dependencies: {  }
-id: tab_item
-label: 'Tab item'
-behavior_plugins: {  }

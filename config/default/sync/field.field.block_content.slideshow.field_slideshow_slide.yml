@@ -40,7 +40,4 @@ settings:
       slide:
         enabled: true
         weight: 11
-      tab_item:
-        weight: 12
-        enabled: false
 field_type: entity_reference_revisions
