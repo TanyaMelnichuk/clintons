@@ -707,11 +707,14 @@ section {
     color: #fff;
     text-align: center;
 }
-.carousel-item .panel-thumbnail .name
+.carousel-item .panel-thumbnail .name,
 .carousel-item .panel-thumbnail .position,
 .carousel-item .panel-thumbnail .detail-position{
     color: #fff;
     text-align: center;
+}
+.carousel-item .panel-thumbnail .position{
+    font-weight: 100;
 }
 .map {
     width: 45%;
@@ -1555,6 +1558,10 @@ footer .navbar-expand-lg {
         flex: 0 0 33%;
         max-width: 33%;
     }
+    #what_we_do .views-row{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
     .sticky-header{
         padding: 0 30px;
     }
@@ -1720,6 +1727,10 @@ footer .navbar-expand-lg {
     .views-row {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    #what_we_do .views-row{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     .main-title-header .second{
         padding: 20px 10px;
