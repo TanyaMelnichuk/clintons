@@ -1238,6 +1238,25 @@ footer .navbar-expand-lg {
 #quicktabs-meet_the_team .people-photo.hover img{
     height: 211px;
 }
+.popup .icon-close{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+}
+.popup .icon-close fa-remove:before,
+.popup .icon-close.fa-close:before,
+.popup .icon-close.fa-times:before{
+    content: '\2573';
+}
+#what_we_do{
+    position: relative;
+}
+#what_we_do .popup.popup-modal {
+    top: 200px;
+    left: 50%;
+    margin-left: -575px;
+    position: absolute;
+}
 /*----------------------------------------*/
 
 /*add new CSS
@@ -1510,9 +1529,10 @@ footer .navbar-expand-lg {
 }
 .item-description .panel-thumbnail .name{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 15px;
     border-bottom: 1px solid;
     margin: 0 5px;
+    margin-left: 10px;
     line-height: 14px;
 }
 #block-views-block-services-services{
@@ -1538,6 +1558,10 @@ footer .navbar-expand-lg {
         flex-direction: column;
         align-items: flex-start;
     }
+    .item-description .paragraph--view-mode--people-service {
+        margin: 10px;
+    }
+
 }
 @media (max-width: 1200px) {
     #block-headertext p,
@@ -1558,6 +1582,11 @@ footer .navbar-expand-lg {
         flex: 0 0 33%;
         max-width: 33%;
     }
+    #quicktabs-meet_the_team .views-row{
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+
     #what_we_do .views-row{
         flex: 0 0 100%;
         max-width: 100%;
@@ -1641,6 +1670,10 @@ footer .navbar-expand-lg {
     .main-title-header .second{
         margin-left: 0;
         margin-top: 20px;
+    }
+    #what_we_do .popup.popup-modal{
+        margin-left: auto;
+        left: 0;
     }
 
 }
@@ -1732,9 +1765,18 @@ footer .navbar-expand-lg {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    #quicktabs-meet_the_team .views-row{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
     .main-title-header .second{
         padding: 20px 10px;
+
+    .icon-close{
+        top: 5px;
+        right: 5px;
     }
+}
 
 }
 
@@ -1770,6 +1812,10 @@ footer .navbar-expand-lg {
         align-items: flex-start;;
     }
     .views-row {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    #quicktabs-meet_the_team .views-row{
         flex: 0 0 100%;
         max-width: 100%;
     }
