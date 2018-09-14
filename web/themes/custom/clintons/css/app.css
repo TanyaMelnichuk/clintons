@@ -707,6 +707,12 @@ section {
     color: #fff;
     text-align: center;
 }
+.carousel-item .panel-thumbnail .name
+.carousel-item .panel-thumbnail .position,
+.carousel-item .panel-thumbnail .detail-position{
+    color: #fff;
+    text-align: center;
+}
 .map {
     width: 45%;
 }
@@ -1473,7 +1479,6 @@ footer .navbar-expand-lg {
 }
 #what_we_do .views-row{
     padding-left: 0;
-    margin-bottom: 60px;
     cursor: pointer;
     position: relative;
 }
