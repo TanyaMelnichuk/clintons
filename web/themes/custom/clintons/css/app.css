@@ -1412,6 +1412,9 @@ footer .navbar-expand-lg {
     width:calc(100% - 50px);
     padding-left: 20px;
 }
+.block-bottom-contacts.phone-contacts>div{
+    width:calc(100% - 50px);
+}
 .paragraph--type--people .right .name p{
     font-size: 30px;
     margin-bottom: 0;
@@ -1539,6 +1542,9 @@ footer .navbar-expand-lg {
 #block-views-block-services-services{
     position: relative;
 }
+.contact-flex>div{
+    display: flex;
+}
 /*----------------------------------------*/
 
 /*media CSS
@@ -1548,6 +1554,11 @@ footer .navbar-expand-lg {
     .gallery-item.col-md-3 {
         flex: 0 0 33.3%;
         max-width: 33.3%;
+    }
+
+    .contact-flex>div {
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -1839,6 +1850,11 @@ footer .navbar-expand-lg {
 
     .main-title-header span {
         font-size: 32px
+    }
+
+    .contact-flex>div {
+        display: flex;
+        flex-direction: column;
     }
 
 }
