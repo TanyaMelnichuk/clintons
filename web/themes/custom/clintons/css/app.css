@@ -106,7 +106,9 @@ body {
     background: #fff;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
 }
-#block-clintons-branding img{
+#block-clintons-branding img,
+.sticky-header img
+{
     width: 170px;
 }
 .navbar-expand-lg {
@@ -1193,29 +1195,51 @@ section {
 /*footer CSS
 /*----------------------------------------*/
 
-footer {
+footer,
+.footer{
     margin-top: 100px;
+    padding: 20px 60px;
+    height: 130px;
 }
 
-footer .navbar-expand-lg {
+footer .navbar-expand-lg,
+.footer{
     background-color: #f7c457;
-    height: 130px;
+    height: 180px;
     display: flex;
     justify-content: space-between;
+    padding-right: 60px;
+    position: relative;
 }
 
+.footer >a{
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+.footer >a>img{
+    width: 170px;
+}
 .footer-menu {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
+.footer .navbar-expand-lg{
+    background: transparent;
+    height: 90px;
+}
 .bottom-footer {
     background-color: #ecbb52;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: -60px;
 }
 
 .bottom-footer p {
@@ -1255,7 +1279,7 @@ footer .navbar-expand-lg {
 #what_we_do .popup.popup-modal {
     top: 200px;
     left: 50%;
-    margin-left: -575px;
+    margin-left: -580px;
     position: absolute;
 }
 /*----------------------------------------*/
@@ -1361,7 +1385,7 @@ footer .navbar-expand-lg {
     position: relative;
 }
 .popup{
-    max-width: 1150px;
+    max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -1579,7 +1603,7 @@ footer .navbar-expand-lg {
     #block-headertext p,
     .main-header .main-title-header,
     .main-title-header span{
-        font-size: 60px
+        font-size: 60px;
     }{
     font-size: 60px
 }
@@ -1606,6 +1630,12 @@ footer .navbar-expand-lg {
     .sticky-header{
         padding: 0 30px;
     }
+    .footer{
+        padding: 20px 30px;
+    }
+    .bottom-footer{
+        margin-left: -30px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -1616,6 +1646,9 @@ footer .navbar-expand-lg {
     .navbar-expand-lg .navbar-brand,
     .navbar-expand-lg .navbar-toggler {
         margin: 5px 15px;
+    }
+    footer .navbar-expand-lg{
+        padding-right: 15px;
     }
     .navbar-expand-lg .navbar-collapse {
         justify-content: flex-start;
@@ -1689,6 +1722,14 @@ footer .navbar-expand-lg {
     }
 
 }
+
+@media (min-width: 767px){
+    .footer .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+}
+
 
 @media (max-width: 768px) {
     .navbar-expand-lg .navbar-brand,
@@ -1788,6 +1829,29 @@ footer .navbar-expand-lg {
     .icon-close{
         top: 5px;
         right: 5px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: 290px;
+        justify-content: center;
+        width: 100%;
+        align-items: center
+    }
+    .footer .navbar-expand-lg{
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .footer .navbar-nav{
+        text-align: center;
+    }
+
+    .footer >a{
+        height: auto;
+    }
+    .bottom-footer {
+        margin-left: 0px;
     }
 }
 

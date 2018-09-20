@@ -10,6 +10,7 @@
       }, 2000);
     });
   });
+
 })(jQuery);
 
 (function ($) {
@@ -124,6 +125,27 @@
     });
   });
 
+
+  //
+  // $(document).ready(function () {
+  //   $(".people-photo.hover").on("click", "a", function (event) {
+  //     event.preventDefault();
+  //      var top = $('.quicktabs-ui-wrapper .popup.popup-modal').offset().top;
+  //     $('body,html').animate({
+  //       scrollTop: top
+  //     }, 2000);
+  //   });
+  // });
+
+
+  $(document).ready(function (){
+    $(".people-photo.hover").click(function (){
+      $('html, body').animate({
+        scrollTop: $("#quicktabs-meet_the_team").offset().top
+      }, 2000);
+    });
+  });
+
   $(".item-description .panel-thumbnail").click(function() {
     var popup = $(this).closest('.panel.panel-default').find('.popup');
     popup.css('display', 'none');
@@ -206,10 +228,8 @@
     parallax();
   });
 
-  $(function () {
-    var active = true;
-    $('.list-block').on('show.bs.collapse', function () {
-        if (active) $('#accordion .in').collapse('hide');
-    });
+
+  jQuery('.list-item').click( function(e) {
+    jQuery('.collapse').collapse('hide');
   });
 })(jQuery);
