@@ -7,7 +7,7 @@
         top = $(id).offset().top;
       $('body,html').animate({
         scrollTop: top
-      }, 2000);
+      }, 1500);
     });
   });
 
@@ -120,10 +120,13 @@
     element.after('<div class="popup popup-modal"></div>');
     var popupModal = $(".popup.popup-modal");
     popupModal.html(popupContent);
+    $(".white-fade").css('display', 'block');
     $(".popup-modal .icon-close").click(function(){
       $(".popup-modal").css('display', 'none');
+      $(".white-fade").css('display', 'none');
     });
   });
+
 
 
   //
@@ -163,6 +166,7 @@
     var container = $(".popup.popup-modal");
     if (container.has(e.target).length === 0){
       container.hide();
+      $(".white-fade").css('display', 'none');
     }
   });
 
