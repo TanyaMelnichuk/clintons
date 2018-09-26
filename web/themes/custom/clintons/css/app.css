@@ -2033,6 +2033,9 @@ footer .navbar-expand-lg,
     .bottom-footer {
         margin-left: 0px;
     }
+    .popup .icon-close{
+        top: 30px;
+    }
 }
 
 
