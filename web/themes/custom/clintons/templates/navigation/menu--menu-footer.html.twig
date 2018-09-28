@@ -29,7 +29,7 @@
     <ul class="navbar-nav">
       {% for item in items %}
         <li{{ item.attributes }} class="nav-item">
-          <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+          <a href="{{ item.url }}" data-dialog-type="modal" class="nav-link use-ajax">{{ item.title }}</a>
           {% if item.below %}
             {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
           {% endif %}
