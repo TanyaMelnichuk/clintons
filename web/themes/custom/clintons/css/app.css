@@ -1753,7 +1753,7 @@ footer .navbar-expand-lg,
     z-index: 10;
     border: 20px solid #f7c457 !important;
     background-color: #fff;
-    padding: 20px 20px;
+    padding: 20px 180px;
     min-height: auto!important;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -1779,7 +1779,7 @@ footer .navbar-expand-lg,
 }
 .ui-dialog .ui-dialog-titlebar-close {
     position: absolute;
-    right: -10px;
+    right: -180px;
     top: 0;
     width: 50px;
     margin: -10px 0 0 0;
@@ -1909,6 +1909,12 @@ footer .navbar-expand-lg,
     }
     .bottom-footer{
         margin-left: -30px;
+    }
+    .ui-dialog{
+        padding: 20px 80px;
+    }
+    .ui-dialog .ui-dialog-titlebar-close{
+        right: -100px;
     }
 }
 
@@ -2138,6 +2144,12 @@ footer .navbar-expand-lg,
         font-size: 18px;
         margin-top: 40px !important;
     }
+    .ui-dialog{
+        padding: 20px 50px;
+    }
+    .ui-dialog .ui-dialog-titlebar-close{
+        right: -70px;
+    }
 }
 
 
@@ -2204,6 +2216,12 @@ footer .navbar-expand-lg,
     .contact-flex>div {
         display: flex;
         flex-direction: column;
+    }
+    .ui-dialog{
+        padding: 20px;
+    }
+    .ui-dialog .ui-dialog-titlebar-close{
+        right: -40px;
     }
 
 }
