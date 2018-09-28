@@ -113,6 +113,7 @@
   });
 
   $(".people-photo.hover").click(function() {
+    $(".white-fade").css('display', 'block');
     var popup = $(this).closest('.panel.panel-default').find('.popup');
     popup.css('display', 'none');
     var popupContent = popup.html();
@@ -120,13 +121,12 @@
     element.after('<div class="popup popup-modal"></div>');
     var popupModal = $(".popup.popup-modal");
     popupModal.html(popupContent);
-    $(".white-fade").css('display', 'block');
+
     $(".popup-modal .icon-close").click(function(){
       $(".popup-modal").css('display', 'none');
       $(".white-fade").css('display', 'none');
     });
   });
-
 
 
   //

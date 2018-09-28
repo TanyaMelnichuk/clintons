@@ -426,7 +426,7 @@ section {
     text-align: center;
     margin-bottom: 0;
     font-weight: 500;
-    font-family: 'Roboto Mono', monospace;
+    font-family: RationalTWDisplay;
 }
 
 .text p{
@@ -1337,10 +1337,11 @@ footer .navbar-expand-lg,
     right: 10px;
 }
 
+
 .popup .left .fa-remove:before,
 .popup .left .fa-close:before,
 .popup .left .fa-times:before {
-    content: "+++" !important;
+    content: "" !important;
 }
 .popup .left .fa-times:before {
     transform: translate(-50%,-50%) rotate(50deg);
@@ -1372,17 +1373,6 @@ footer .navbar-expand-lg,
 }
 
 
-
-
-
-
-
-.popup .icon-close.fa-remove:before,
-.popup .icon-close.fa-close:before,
-.popup .icon-close.fa-times:before{
-    content: '\2573';
-}
-
 #what_we_do{
     position: relative;
 }
@@ -1412,7 +1402,7 @@ footer .navbar-expand-lg,
     height: 60px;
     border: 0 !important;
     background-color: #f7c457;
-    z-index: 100000;
+    z-index: 100;
     position: relative;
 }
 #quicktabs-meet_the_team ul li{
@@ -1523,6 +1513,7 @@ footer .navbar-expand-lg,
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     display: none;
 }
 #quicktabs-meet_the_team .ui-tabs-panel .contextual-region{
@@ -1566,6 +1557,7 @@ footer .navbar-expand-lg,
     background-color: #fff;
     padding: 20px 20px;
     min-height: 580px;
+    position: relative;
 }
 .popup.popup-modal{
     display: block;
@@ -1749,6 +1741,108 @@ footer .navbar-expand-lg,
 .contact-flex>div{
     display: flex;
 }
+
+.ui-dialog{
+    max-width: 1160px;
+    width: auto !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    border: 20px solid #f7c457 !important;
+    background-color: #fff;
+    padding: 20px 20px;
+    min-height: auto!important;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.ui-dialog .ui-dialog-titlebar{
+    background-color: transparent;
+    border: 0;
+}
+.ui-dialog-title{
+    width: 100% !important;
+    text-align: center;
+    font-size: 30px;
+    font-family: RationalTWDisplay;
+    font-weight: 100;
+    margin-top: 30px !important;
+}
+.ui-dialog .ui-dialog-content p{
+    font-size: 16px;
+    font-weight: 100;
+    opacity: 1;
+    line-height: 30px;
+    padding-top: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 50px;
+    margin: -10px 0 0 0;
+    padding: 1px;
+    height: 50px;
+    border: 0;
+    background-color: transparent;
+}
+.ui-button .ui-icon,
+.ui-state-hover .ui-icon, .ui-state-focus .ui-icon, .ui-button:hover .ui-icon, .ui-button:focus .ui-icon{
+    background-image: none;
+    background-color: transparent;
+}
+.ui-button{
+    background-image: none !important;
+    background-color: transparent;
+    font-size: 30px;
+    color: #d85a89;
+    font-weight: 500;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+}
+.ui-button:before,
+.ui-button:before,
+.ui-button:before {
+    content: "" !important;
+}
+.ui-button:before {
+    transform: translate(-50%,-50%) rotate(50deg);
+    will-change: translate,rotate;
+    top: 32px;
+}
+.ui-button:after {
+    transform: translate(-50%,-50%) rotate(130deg);;
+    will-change: translate,rotate;
+
+}
+.ui-button:after,
+.ui-button:before {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background-color: #d85a89;
+    display: block;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    opacity: 1;
+    contain: strict;
+    cursor: pointer;
+}
+.ui-button:hover:after{
+    transform:translate(-50%,-50%) rotate(-50deg);
+}
+.ui-button:hover:before{
+    transform:translate(-50%,-50%) rotate(-130deg);
+}
+.ui-widget-overlay {
+    background: #fff/*{bgColorOverlay}*/ /*{bgImgUrlOverlay}*/ /*{bgOverlayXPos}*/ /*{bgOverlayYPos}*/ /*{bgOverlayRepeat}*/;
+    opacity: .6/*{opacityOverlay}*/;
+    filter: Alpha(Opacity=30)/*{opacityFilterOverlay}*/;
+}
+
 /*----------------------------------------*/
 
 /*media CSS
@@ -2035,6 +2129,14 @@ footer .navbar-expand-lg,
     }
     .popup .icon-close{
         top: 30px;
+    }
+    .ui-dialog{
+        width: 100% !important;
+        left: 0 !important;
+    }
+    .ui-dialog .ui-dialog-title{
+        font-size: 18px;
+        margin-top: 40px !important;
     }
 }
 
