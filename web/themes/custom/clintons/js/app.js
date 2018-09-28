@@ -128,6 +128,26 @@
     });
   });
 
+  $("#people .panel-thumbnail").click(function() {
+    var popup = $(this).closest('.paragraph--type--people').find('.popup');
+    popup.css('display', 'none');
+    var popupContent = popup.html();
+    var element = $('#quicktabs-meet_the_team .ui-tabs-nav');
+    element.after('<div class="popup popup-modal"></div>');
+    var popupModal = $(".popup.popup-modal");
+    popupModal.html(popupContent);
+
+    $(".popup-modal .icon-close").click(function(){
+      $(".popup-modal").css('display', 'none');
+    });
+  });
+  $(document).ready(function (){
+    $("#people .panel-thumbnail").click(function (){
+      $('html, body').animate({
+        scrollTop: $("#quicktabs-meet_the_team").offset().top
+      }, 2000);
+    });
+  });
 
   //
   // $(document).ready(function () {
@@ -161,8 +181,15 @@
       $(".popup-modal").css('display', 'none');
     });
   });
+  $(document).ready(function (){
+    $(".item-description .panel-thumbnail").click(function (){
+      $('html, body').animate({
+        scrollTop: $("#block-views-block-services-services .back-blue").offset().top
+      }, 2000);
+    });
+  });
 
-  $(document).mouseup(function (e) {
+  $('.popup.popup-modal').mouseup(function (e) {
     var container = $(".popup.popup-modal");
     if (container.has(e.target).length === 0){
       container.hide();

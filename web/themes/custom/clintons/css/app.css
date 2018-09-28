@@ -176,8 +176,7 @@ body {
     display: block;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link:hover,
-.navbar-expand-lg .navbar-nav .nav-link:focus{
+.navbar-expand-lg .navbar-nav .nav-link:hover{
     text-decoration:line-through;
     transition: .3s;
 }
@@ -1842,7 +1841,9 @@ footer .navbar-expand-lg,
     opacity: .6/*{opacityOverlay}*/;
     filter: Alpha(Opacity=30)/*{opacityFilterOverlay}*/;
 }
-
+#people .popup{
+    display: none;
+}
 /*----------------------------------------*/
 
 /*media CSS
@@ -2217,9 +2218,11 @@ footer .navbar-expand-lg,
         display: flex;
         flex-direction: column;
     }
+
     .ui-dialog{
         padding: 20px;
     }
+
     .ui-dialog .ui-dialog-titlebar-close{
         right: -40px;
     }
